@@ -1,0 +1,13 @@
+--- 
+wordpress_id: 14
+title: New Blogging Schedule!
+wordpress_url: http://www.litanyagainstfear.com/blog/2008/03/11/new-blogging-schedule/
+layout: post
+---
+Every few months I try to start up this routine, but this time I'm going to try and keep it. I'm going to post blogs on Tuesday, Thursday, and Saturday. It's a strange schedule since most bloggers and web comics seem to update on Monday, Wednesday, Fridays, but this works a little better for me with my classes this quarter.<!--more-->
+
+By the way, Twitter ROCKS. If you haven't heard of it or haven't tried it out, it is a micro-blogging service.  Imagine an extremely watered down version of Facebook, where all that remains is friends and status-updates.  Twitter is basically that, except there's a million and one ways to post to the site: on the actual site, via text messaging, email, IM, or the myriad of applications that have been built around Twitter's fantastic API. Two that are absolutely astounding on Windows are twhirl and Witty. (Yes, it seems that every Twitter client needs to have a corny or mashed-up name). twhirl is a very clean Flash AIR client, so it'll run on basically anything, and Witty is also a neat .NET 3.0/WPF client that is wonderfully easy to use. If you're signing up or already a member, my page is here: <a href="http://www.twitter.com/doctornick">http://www.twitter.com/doctornick</a>, and thanks to <a href="http://www.theislanddog.com">Island Dog</a> for reminding about how awesome this service is.
+
+I also need to figure out how to get my blog out there a bit more. Obviously posting at reddit doesn't work all the time and it's slightly detrimental to my karma, but it begs the question of how good blogs spread through the tubes.  This sounds like some sort of thesis paper topic. Technorati and word-of-mouth are the most obvious answers, but if you have another source that I'm not aware of, let me know.
+
+Also, what's your blogging schedule, if you happen to have one? And do you write your posts the day before you post it, or on the day of?

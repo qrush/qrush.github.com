@@ -1,0 +1,13 @@
+--- 
+wordpress_id: 25
+title: Happy Easter!
+wordpress_url: http://www.litanyagainstfear.com/blog/2008/03/23/happy-easter/
+layout: post
+---
+I had a slighty crappy weekend filling mostly with playing games and working on my ray tracer. Looks like it isn't going to well:
+
+<a href="http://litanyagainstfear.com/wp-content/uploads/2008/03/definitely-not-a-sphere.png" title="Definitely not a sphere."><img src="http://litanyagainstfear.com/wp-content/uploads/2008/03/definitely-not-a-sphere-150x150.png" alt="Definitely not a sphere." /></a>
+
+That should be a sphere. Not some strange cone thing. Progress is slow, but steady.  Understanding the theory is key to this, and it's pretty damn tough.
+
+Well, Happy Easter everyone, and I hope if you made some sort of Lenten sacrifice (I gave up fast food!) you've kept it. A Wendy's spicy Baconator is calling my name, and it's getting harder and harder to resist...

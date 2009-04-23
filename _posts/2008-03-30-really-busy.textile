@@ -1,0 +1,11 @@
+--- 
+wordpress_id: 30
+title: Really Busy...
+wordpress_url: http://www.litanyagainstfear.com/blog/2008/03/30/really-busy/
+layout: post
+---
+No post tonight, so in the spirit of <a href="http://twitter.com/mittense">@mittense</a>, here's a kitty.
+
+<img src="http://icanhascheezburger.files.wordpress.com/2008/03/funny-pictures-orange-kitten-has-ladybug.jpg" alt="" width="500" height="375" />
+
+I did upgrade to WP 2.5 though, and it's working great. More on Tuesday!

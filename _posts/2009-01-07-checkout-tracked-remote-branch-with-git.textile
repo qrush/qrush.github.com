@@ -1,0 +1,24 @@
+--- 
+wordpress_id: 396
+title: Checkout tracked remote branch with Git
+wordpress_url: http://litanyagainstfear.com/?p=396
+layout: post
+---
+I frequently need to do this when setting up or syncing my various machines, and I seem to forget the command all the time. So let's say you've got more than one branch on your remote, and you want to bring it down into your local repository as well:
+<p style="text-align: center;"><img class="size-full wp-image-397 aligncenter" title="branches" src="http://litanyagainstfear.com/wp-content/uploads/2009/01/branches.png" alt="" width="243" height="180" /></p>
+
+Viewing information on the remote should look something like this:
+<pre style="padding-left: 30px;">$ git remote show origin
+* remote origin
+  URL: *************
+  Remote branch merged with 'git pull' while on branch master
+    master
+  Tracked remote branches
+    haml master</pre>
+Luckily, the command syntax for this is quite simple:
+<pre style="padding-left: 30px;">git checkout --track -b &lt;local branch&gt; &lt;remote&gt;/&lt;tracked branch&gt;</pre>
+So in my case, I used this command:
+<pre style="padding-left: 30px;">git checkout --track -b haml origin/haml</pre>
+<strong>EDIT: </strong>There is an even easier way to do this. Thanks, <a href="http://twitter.com/dlsspy/status/1100708871"><span class="fn">Dustin</span></a>!
+<pre style="padding-left: 30px;"><span class="entry-content">git checkout -t origin/haml</span></pre>
+If this was confusing for you or if it helped out, let me know in the comments!
