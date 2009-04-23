@@ -1,3 +1,11 @@
+/* colors 
+ * e06c0d
+ * a34114
+ * f5b678
+ * 7a2a14
+ * 45150b
+ */
+
 /* elements */
 * { 
   margin: 0; 
@@ -12,16 +20,16 @@ body {
 }
 
 
-a:link {
-  color: #F5B678;
+h1 a:link {
+  color: #7a2a14;
   text-decoration: none;
 }
-a:visited {
-  color: #F5B678;
+h1 a:visited {
+  color: #7a2a14;
   text-decoration: none;
 }
-a:hover {
-  color: #F5B678;
+h1 a:hover {
+  color: #7a2a14;
   text-decoration: underline;
 }
 
@@ -42,16 +50,16 @@ code {
 }
 
 h1, h2, h3, #footer { 
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   font-weight: bolder;
   letter-spacing: -1px;
-  color: #F5B678;
 }
 
 h1 { 
-  font-size: 30px; 
+  font-size: 36px; 
   line-height: 36px;
-  margin-bottom: 18px; 
+  margin: 18px auto; 
+  text-align: center;
 }
 
 h2 { 
