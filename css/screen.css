@@ -1,0 +1,150 @@
+/* elements */
+* { 
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  color: #222;
+  font-family: 'Times New Roman', 'Times', serif;
+  line-height: 1.4em;
+  background-image: url(../images/vachetta.gif);
+}
+
+
+a:link {
+  color: #F5B678;
+  text-decoration: none;
+}
+a:visited {
+  color: #F5B678;
+  text-decoration: none;
+}
+a:hover {
+  color: #F5B678;
+  text-decoration: underline;
+}
+
+a img { border-width: 0; }
+
+blockquote {
+  border-left: 1px solid #222;
+  line-height: 18px;
+  font-size: 11pt;
+  font-style: italic;
+  margin: 20px;
+  padding-left: 10px;
+}
+
+code {
+  font-family: 'DejaVu Sans Mono', 'Courier New', monospace;
+  font-size: 12pt;
+}
+
+h1, h2, h3, #footer { 
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: bolder;
+  letter-spacing: -1px;
+  color: #F5B678;
+}
+
+h1 { 
+  font-size: 30px; 
+  line-height: 36px;
+  margin-bottom: 18px; 
+}
+
+h2 { 
+  font-size: 24px; 
+  line-height: 22px; 
+  margin-bottom: 18px;
+}
+
+h3 { 
+  font-size: 20px; 
+  line-height: 22px; 
+}
+
+li { margin-bottom: 4px; }
+
+p, ul, ol { margin-bottom: 18px; }
+
+ul, ol {
+  margin-left: 2em;
+}
+
+ul { list-style-type: square; }
+
+
+/* classes */
+.book-cover {
+  float: left;
+  margin-right: 10px;
+}
+
+.fusiontext a, .fusiontext a:hover, .fusiontext a:visited {
+  color: #222;
+  text-decoration: none;
+}
+
+.post {
+  border-bottom: 1px solid #222;
+  margin-bottom: 20px; 
+}
+
+.post p {
+  font-size: 13pt;
+  line-height: 26px;
+}
+
+.post .signoff {
+  font-size: 12pt;
+  font-style: italic;
+  text-align: right; 
+}
+
+/* ids */
+#cse-search-box {
+  margin-top: 10px;
+}
+
+#footer {
+  font-size: 14pt;
+}
+
+#fusionad {
+  float: right;
+  margin: 75px 200px 0 10px;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 10pt;
+  text-align: center;
+  width: 150px;
+}
+
+#intro {
+  color: #666;
+  font-size: 22pt;
+  margin-bottom: 24pt;
+  margin-top: 24pt;
+}
+
+#subtitle, #title { color: #333; }
+
+#subtitle {
+  font-size: 24pt;
+}
+
+#title {
+  font-size: 32pt;
+}
+
+#wrapper {
+  max-width: 40em;
+  min-width: 30em;
+  width: 32em;
+}
+
+#main {
+  background: #F5B678;
+}
+
