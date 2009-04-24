@@ -14,11 +14,19 @@
 
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
-  color: #222;
   line-height: 1.4em;
   background-image: url(../images/vachetta.gif);
 }
 
+a:link, a:visited {
+  color: #7a2a14;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 h1 a:link, h1 a:visited, h1 a:hover {
   color: #45150b;
@@ -48,7 +56,7 @@ h1, h2, h3, #footer {
 }
 
 .grid_2 {
-  padding-top: 75px;
+  padding-top: 95px;
 }
 
 .grid_2 h4 {
@@ -56,6 +64,7 @@ h1, h2, h3, #footer {
 }
 
 .grid_2 a {
+  font-weight: normal;
   display: block;
   font-size: 18px;
   color: #fff;
@@ -130,7 +139,7 @@ ul { list-style-type: square; }
 #subtitle {
   text-align: center;
   font-size: 14px;
-  color: #7a2a14;
+  color: #a34114;
 }
 
 #main {
@@ -143,3 +152,37 @@ ul { list-style-type: square; }
 
 #links h4 {
 }
+
+#archive {
+  list-style: none;
+  width: 500px;
+  margin: 20px auto;
+}
+
+#archive li {
+  height: 20px;
+  margin: 0;
+}
+
+#archive a {
+  float: left;
+}
+
+#archive abbr {
+  color: #666;
+  float: right;
+  font-size: 12px;
+}
+
+#footer {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+#footer a {
+  color: #666;
+  font-size: 11px;
+  font-weight: normal;
+}
+
