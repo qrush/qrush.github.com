@@ -21,15 +21,14 @@ Ben is now going over some what they used to speed up the app. Second highest da
 More scaling static content techniques: Used memcache and load-balancer caching. Pulled AJAX requests from a CDN, reduced how big the page was, and grouped flash content into one file.
 
 Strengths:
-<ul>
-	<li>Rapid start, raw data to app in hours</li>
-	<li>Tweak-friendly. Can easily change stuff because of Capistrano.</li>
-	<li>Ability to drop down to SQL in AR is essential.</li>
-	<li>Web code works well on command line. (In other words, PHP can't do that.)</li>
-</ul>
+* Rapid start, raw data to app in hours
+* Tweak-friendly. Can easily change stuff because of Capistrano.
+* Ability to drop down to SQL in AR is essential.
+* Web code works well on command line. (In other words, PHP can't do that.)
+
 Weaknesses:
-<ul>
-	<li>NYTimes is mostly a Sun shop. They use EC2 for most stuff.</li>
-	<li>Deployment. What? I missed this.</li>
-	<li>Admin interface isn't there out of the box like Django.</li>
-</ul>
+
+* NYTimes is mostly a Sun shop. They use EC2 for most stuff.
+* Deployment. What? I missed this.
+* Admin interface isn't there out of the box like Django.
+
