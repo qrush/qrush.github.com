@@ -13,24 +13,16 @@
 }
 
 body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
   color: #222;
-  font-family: 'Times New Roman', 'Times', serif;
   line-height: 1.4em;
   background-image: url(../images/vachetta.gif);
 }
 
 
-h1 a:link {
-  color: #7a2a14;
+h1 a:link, h1 a:visited, h1 a:hover {
+  color: #45150b;
   text-decoration: none;
-}
-h1 a:visited {
-  color: #7a2a14;
-  text-decoration: none;
-}
-h1 a:hover {
-  color: #7a2a14;
-  text-decoration: underline;
 }
 
 a img { border-width: 0; }
@@ -50,15 +42,37 @@ code {
 }
 
 h1, h2, h3, #footer { 
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Georgia', 'Times New Roman', 'Times', serif;
   font-weight: bolder;
   letter-spacing: -1px;
 }
 
+.grid_2 {
+  padding-top: 75px;
+}
+
+.grid_2 h4 {
+  color: #fff;
+}
+
+.grid_2 a {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  margin: 2px auto;
+}
+
+.grid_2 a:hover {
+  text-decoration: underline;
+}
+
+
 h1 { 
   font-size: 36px; 
   line-height: 36px;
-  margin: 18px auto; 
+  margin-top: 18px;
+  margin-bottom: 3px;
   text-align: center;
 }
 
@@ -112,47 +126,20 @@ ul { list-style-type: square; }
 }
 
 /* ids */
-#cse-search-box {
-  margin-top: 10px;
-}
-
-#footer {
-  font-size: 14pt;
-}
-
-#fusionad {
-  float: right;
-  margin: 75px 200px 0 10px;
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  font-size: 10pt;
-  text-align: center;
-  width: 150px;
-}
-
-#intro {
-  color: #666;
-  font-size: 22pt;
-  margin-bottom: 24pt;
-  margin-top: 24pt;
-}
-
-#subtitle, #title { color: #333; }
 
 #subtitle {
-  font-size: 24pt;
-}
-
-#title {
-  font-size: 32pt;
-}
-
-#wrapper {
-  max-width: 40em;
-  min-width: 30em;
-  width: 32em;
+  text-align: center;
+  font-size: 14px;
+  color: #7a2a14;
 }
 
 #main {
   background: #F5B678;
 }
 
+#links {
+  text-align: right;
+}
+
+#links h4 {
+}
