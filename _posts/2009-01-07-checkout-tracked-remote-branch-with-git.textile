@@ -11,7 +11,7 @@ p=. !http://gitready.com/images/branches.png!
 
 Viewing information on the remote should look something like this:
 
-<pre>
+{% highlight text %}
 $ git remote show origin
   * remote origin
     URL: *************
@@ -20,14 +20,11 @@ $ git remote show origin
         master
       Tracked remote branches
         haml master
-</pre>
+{% endhighlight %}
 
 Luckily, the command syntax for this is quite simple:
 
-<pre>
-git checkout --track -b 
-  <local branch> <remote>/<tracked branch>
-</pre>
+@git checkout --track -b <local branch> <remote>/<tracked branch>@
 
 So in my case, I used this command:
 
