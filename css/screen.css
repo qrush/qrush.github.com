@@ -15,7 +15,7 @@
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
   line-height: 1.4em;
-  background-image: url(../images/vachetta.gif);
+  background-image: url(../images/pattern.png);
 }
 
 a:link, a:visited {
@@ -77,7 +77,7 @@ h1, h2, h3, #footer {
   font-weight: normal;
   display: block;
   font-size: 18px;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   margin: 2px 10px;
 }
@@ -126,7 +126,7 @@ ul { list-style-type: square; }
 }
 
 #main {
-  background: #F5B678;
+  background: #C7B795;
 }
 
 #links {
