@@ -114,7 +114,6 @@ h2 {
   text-align: center;
   font-size: 24px; 
   line-height: 22px; 
-  margin-bottom: 3px;
 }
 
 h3 { 
@@ -174,6 +173,18 @@ ul { list-style-type: square; }
 
 #post {
   padding: 0px 30px;
+}
+
+#post h2 {
+  margin-bottom: 3px;
+}
+
+#static {
+  padding: 0px 30px;
+}
+
+#static h2 {
+  margin-bottom: 15px;
 }
 
 #date {

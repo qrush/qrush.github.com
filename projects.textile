@@ -1,0 +1,7 @@
+---
+layout: static
+title: projects
+---
+
+Updating this soon!
+
