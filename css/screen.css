@@ -28,6 +28,26 @@ a:hover {
   text-decoration: underline;
 }
 
+
+pre, code {
+-x-system-font:none;
+font-family:Monaco,"Courier New",monospace;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+line-height:normal;
+}
+
+pre {
+  background-color: #ccc;
+  border: 2px solid #333;
+  padding-left: 10px;
+  padding-top: 10px;
+  line-height: 10px;
+}
+
 h1 a:link, h1 a:visited, h1 a:hover {
   color: #45150b;
   text-decoration: none;
@@ -54,11 +74,6 @@ blockquote {
   padding-left: 10px;
 }
 
-code {
-  font-family: 'DejaVu Sans Mono', 'Courier New', monospace;
-  font-size: 12pt;
-}
-
 h1, h2, h3, #footer { 
   font-family: 'Georgia', 'Times New Roman', 'Times', serif;
   font-weight: bolder;
@@ -66,7 +81,7 @@ h1, h2, h3, #footer {
 }
 
 .grid_2 {
-  padding-top: 95px;
+  padding-top: 110px;
 }
 
 .grid_2 h4 {
