@@ -3,7 +3,7 @@ layout: static
 title: about
 ---
 
-Welcome to the blog of Nick Quaranto! This is where I hope I can share a bit of my life with some added spice on my little corner of the internet. <a href="http://litanyagainstfear.com/contact">Want to get a hold of me?</a>
+Welcome to the blog of Nick Quaranto! This is where I hope I can share a bit of my life with some added spice on my little corner of the internet. <a href="/contact.html">Want to get a hold of me?</a>
 
 Here's a few somewhat unknown facts about me, in the spirit of other bloggers:
 * I was born on a Friday the 13th.
