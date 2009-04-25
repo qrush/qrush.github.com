@@ -4,7 +4,7 @@ title: 5 Great Talks Notes
 wordpress_url: http://litanyagainstfear.com/?p=284
 layout: post
 ---
-Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="../blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a><a href="../blog/2008/11/18/blog/2008/11/18/blog/2008/11/18/professional-ruby-conference-notes/"></a>
+Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="../blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a><a href="../blog/2008/11/19/blog/2008/11/18/blog/2008/11/18/blog/2008/11/18/professional-ruby-conference-notes/"></a>
 
 This is a talk about talks from Matt Knox (filling in for Giles Bowkett, who didn't show)
 

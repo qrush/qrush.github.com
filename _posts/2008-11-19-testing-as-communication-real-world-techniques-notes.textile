@@ -4,24 +4,24 @@ title: "Testing as Communication: Real-World Techniques Notes"
 wordpress_url: http://litanyagainstfear.com/?p=310
 layout: post
 ---
-Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="../blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a><a href="../blog/2008/11/19/blog/2008/11/19/blog/2008/11/18/blog/2008/11/18/blog/2008/11/18/professional-ruby-conference-notes/"></a>
+Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="http://litanyagainstfear.com/blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a>
 
 This talk is from Jon Larkowski from Hashrocket.
 
 Subset of Obie's The Hashrocket Way talk. No mismatch between what the customer says and what the tests give. Hashrocket values agility &amp; transparency. Communicate all the f***ing time, but only if the overhead is low. Two lines of communication:
-<ul>
-	<li>Client to developer</li>
-	<li>Developer to developer</li>
-</ul>
+
+* Client to developer
+* Developer to developer
+
 Tools they use:
 
 Pivotal Tracker: Awesome tool. They don't write a line of code unless if a story in the application supports. Seriously, just check out http://pivotaltracker.com Tells you when features will be done with velocity. Again, just go to the site. This helps them out with communication because it lets them know who's working on what. Also a huge scheduling tool. Helps developers talk to developers with estimation efforts.
 
 Stories: All work is driven on stories. Only code what's on the card. Stories are tokens of a conversation. Writing stories at a developer level where they can start implementing it is important. They used to use index cards but now they just use the Tracker. They slowly train customers to write their own stories. Standard forms:
-<ul>
-	<li>As a / I want to / So That</li>
-	<li>Given / When / Then</li>
-</ul>
+
+* As a / I want to / So That
+* Given / When / Then
+
 They want to understand development efforts in a larger context, so this helps out to see the bigger picture.
 
 Pair programming: Keeps developers honest, focused, and leads to higher quality code. There's two wheels on the axle since there's more than one person that knows the code. Laptops on either side of the computer. Ping Pong: one dev writes a failing test, other writes code to pass the test, rinse and repeat. Daily standups for the entire company.

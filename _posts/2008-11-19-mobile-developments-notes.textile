@@ -4,17 +4,17 @@ title: Mobile Developments Notes
 wordpress_url: http://litanyagainstfear.com/?p=303
 layout: post
 ---
-Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="../blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a><a href="../blog/2008/11/19/blog/2008/11/19/blog/2008/11/18/blog/2008/11/18/blog/2008/11/18/professional-ruby-conference-notes/"></a>
+Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="http://litanyagainstfear.com/blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a>
 
 This talk is from Matt Pelletier from Eastmedia.
 
 Going to talk about the mobile world. ~280 million PC sales worldwide. Around 1.2 billion mobile handsets too. The technologies that are in play:
-<ul>
-	<li>Voice</li>
-	<li>SMS</li>
-	<li>MMS</li>
-	<li>Mobile Data Services</li>
-</ul>
+
+* Voice
+* SMS
+* MMS
+* Mobile Data Services
+
 Voice: How all of the telcoms started, obviously. Normal calls. Robots too. Tons of VoIP technologies too: Voice XML, Asterisk/Adhersion
 
 SMS: Just recently started to surpass the number of voice calls in the States. SMS has long been used in South Korea/Japan. More SMS than email there! Mobile Terminated: you send a text message, Mobile Originated: you recieve a text message. SMS works even during emergencies and when phones are normally down since it wasn't originally a consumer service. There's no metadata associated with an SMS though...just time and 160 characters. Can't reply even.

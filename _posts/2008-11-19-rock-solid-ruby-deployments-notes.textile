@@ -4,7 +4,7 @@ title: Rock Solid Ruby Deployments Notes
 wordpress_url: http://litanyagainstfear.com/?p=297
 layout: post
 ---
-Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="../blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a><a href="../blog/2008/11/18/blog/2008/11/18/blog/2008/11/18/professional-ruby-conference-notes/"></a>
+Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="http://litanyagainstfear.com/blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a>
 
 This talk is from Philippe Hanrigou (<a href="http://ph7spot.com">http://ph7spot.com</a>)
 

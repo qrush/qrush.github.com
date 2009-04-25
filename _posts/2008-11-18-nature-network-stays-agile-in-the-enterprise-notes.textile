@@ -22,4 +22,4 @@ Plenty of stakeholders in the project that had conflicting and related requireme
 
 Developers were obsessed with test coverage, not product quality. Obsessed with semantic/valid markup, not site usability. Elegance &amp; refactoring over how the site feels/looks. Developers aren't just coders! Devs must have constant access to product team, but the product team can't interrupt devs.
 
-Production site was still very high-quality. Hire excelent people. Enterprise is about avoiding risk and managing change.
+Production site was still very high-quality. Hire excellent people. Enterprise is about avoiding risk and managing change.
