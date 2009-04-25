@@ -3,6 +3,7 @@ wordpress_id: 351
 title: Using Berkeley DB and Ruby for Large Data Sets Notes
 wordpress_url: http://litanyagainstfear.com/?p=351
 layout: post
+category: prorubyconf
 ---
 Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="http://litanyagainstfear.com/blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a>
 

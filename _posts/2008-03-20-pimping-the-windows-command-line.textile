@@ -3,6 +3,7 @@ wordpress_id: 23
 title: Pimping the Windows Command Line
 wordpress_url: http://www.litanyagainstfear.com/blog/2008/03/20/pimping-the-windows-command-line/
 layout: post
+category: windows
 ---
 Lately I've noticed that a few of my friends have been able to understand or even be aware of the Windows command line.  I have a hard time myself pulling myself away from Explorer, but sometimes the command line is just quicker. However, it's a bit drab by default. Today I'm going to show you just how you can pimp yours out a bit.<!--more-->
 

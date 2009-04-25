@@ -3,6 +3,7 @@ wordpress_id: 15
 title: 5 Things That Video Games Do That Really Make Me Angry
 wordpress_url: http://www.litanyagainstfear.com/blog/2008/03/13/5-things-that-video-games-do-that-really-make-me-angry/
 layout: post
+category: gaming
 ---
 I'm sure that this list could be a lot longer, but I'm going to focus on six issues that really piss me off when I'm playing video games. If games happen to have more than 2 or 3 of these traits they tend to collect dust in my game cases very quickly, or they will do the same at your local game store. So, without further adieu:
 

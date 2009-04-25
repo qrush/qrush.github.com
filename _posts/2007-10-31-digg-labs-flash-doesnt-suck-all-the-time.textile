@@ -3,6 +3,7 @@ wordpress_id: 6
 title: "Digg Labs: Flash doesn&#8217;t suck all the time."
 wordpress_url: http://www.litanyagainstfear.com/blog/2007/10/31/digg-labs-flash-doesnt-suck-all-the-time/
 layout: post
+category: internet
 ---
 Don't get me wrong. I'm not an expert on Flash. I haven't even made anything special in flash. Yeah, I can tween a circle and bounce it around the stage, and that's the extent of my Flash knowledge. One thing I do know about it: if you want to drive traffic from Google searches, you're better off not using it. Some bloggers even claim <a href="http://www.seoresearcher.com/seo-flash-is-evil-five-big-reasons-not-to-use-flash.htm" target="_blank">its use to be evil</a>.  Now I'm sure there's a lot of Adobe fans are ready and willing to tear me a new one by now with arguments about how Flex and AIR will change the face of the interweb, but it's my opinion and always will be that your website's MAIN content should NEVER be in Flash. Let's look at the letters you type into that address bar of your browser at least once every day: <a href="http://en.wikipedia.org/wiki/Http" target="_blank">HTTP</a>. Hyper. Text. Not animations, or effects, but text. Until that protocol changes I doubt Flash will ever be used as a serious web design platform.
 

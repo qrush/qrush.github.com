@@ -3,6 +3,7 @@ wordpress_id: 377
 title: "GitHub Rebase #6"
 wordpress_url: http://litanyagainstfear.com/?p=377
 layout: post
+category: git
 ---
 The sixth edition of my column is live: <a href="http://github.com/blog/246-github-rebase-6"><span>http://<span>github</span>.com/blog/246-<span>github</span>-<span>rebase</span>-6</span></a>
 

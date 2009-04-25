@@ -3,6 +3,7 @@ wordpress_id: 204
 title: Pumpkin Carving 2008
 wordpress_url: http://litanyagainstfear.com/?p=204
 layout: post
+category: git
 ---
 In 2006 I created a <a href="http://photos-a.ak.facebook.com/photos-ak-sf2p/v49/236/39/24408547/n24408547_30746800_6913.jpg">stormtrooper</a>. Last year was <a href="http://www.homestarrunner.com/ween_stencils.html">HomestarRunner</a>. This year however, I paid homage to the one and the only, <a href="http://www.youtube.com/watch?v=8hm3E2cGQE4">Octocat</a>:
 

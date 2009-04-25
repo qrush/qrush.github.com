@@ -3,6 +3,7 @@ wordpress_id: 192
 title: Where do you get Ruby news from?
 wordpress_url: http://litanyagainstfear.com/?p=192
 layout: post
+category: ruby
 ---
 I'm wondering where other fellow Ruby and Rails hackers get their Ruby-related news fix from. For some reason I just feel continually disconnected from the community at large and I just want to make sure I'm taking advantage of the resources out there. So here's my news sources:
 

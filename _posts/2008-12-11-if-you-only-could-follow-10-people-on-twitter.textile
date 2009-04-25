@@ -3,6 +3,7 @@ wordpress_id: 389
 title: If you only could follow 10 people on Twitter...
 wordpress_url: http://litanyagainstfear.com/?p=389
 layout: post
+category: internet
 ---
 ...who would they be? I'm following a staggering number of people (1,337 to be exact), and the signal vs. noise ratio is just getting out of control. I'm not sure how I got into this situation: I just started following everyone that followed me, and it spun out of control. I see a few options from here:
 

@@ -3,6 +3,7 @@ wordpress_id: 133
 title: Switching to Rails
 wordpress_url: http://litanyagainstfear.com/?p=133
 layout: post
+category: ruby
 ---
 
 For a while now I've been <span style="text-decoration: line-through;">obsessed</span> working with Ruby on Rails. Rails has caused me to switch from doing .NET/ASP.NET development on my desktop PC using Windows XP to owning a Mac Mini and putting Ubuntu on Dell laptop. Obviously, this is a huge change, and I'm going to explain why I've switched.

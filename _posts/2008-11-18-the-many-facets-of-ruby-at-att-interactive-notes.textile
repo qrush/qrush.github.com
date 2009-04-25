@@ -3,6 +3,7 @@ wordpress_id: 265
 title: The many facets of Ruby at AT&T Interactive Notes
 wordpress_url: http://litanyagainstfear.com/?p=265
 layout: post
+category: prorubyconf
 ---
 Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="../blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a>
 

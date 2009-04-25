@@ -3,6 +3,7 @@ wordpress_id: 396
 title: Checkout tracked remote branch with Git
 wordpress_url: http://litanyagainstfear.com/?p=396
 layout: post
+category: git
 ---
 
 I frequently need to do this when setting up or syncing my various machines, and I seem to forget the command all the time. So let's say you've got more than one branch on your remote, and you want to bring it down into your local repository as well:

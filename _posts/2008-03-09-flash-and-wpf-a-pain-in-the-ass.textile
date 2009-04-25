@@ -3,6 +3,7 @@ wordpress_id: 9
 title: "Flash and WPF: A pain in the ass."
 wordpress_url: http://www.litanyagainstfear.com/blog/2008/03/09/flash-and-wpf-a-pain-in-the-ass/
 layout: post
+category: windows
 ---
 I could say this about WPF as a whole, but when things actually work with WPF it's so damn smooth I can't help but feel somewhat accomplished. Nevertheless, I had a real pain trying to get an embedded flash player into my WPF app. Why Flash? Why not...dare I say, Silverlight? Well, I'm building a small app that plays YouTube videos, so obviously Flash makes sense. First, here's some lessons I learned while on this wonderfully frustrating journey:<!--more-->
 

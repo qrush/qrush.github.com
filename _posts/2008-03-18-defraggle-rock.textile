@@ -3,6 +3,7 @@ wordpress_id: 17
 title: Defraggle Rock
 wordpress_url: http://www.litanyagainstfear.com/blog/2008/03/18/defraggle-rock/
 layout: post
+category: windows
 ---
 As always, I'm late to jump on the <strike>fail</strike>boat, and this time I've decided to do some serious maintenance on my computer. I've had enough of having to rely on System Restore and worrying that I've lost all of my data, or that my computer is on the brink of death. So, I'm going to start maintaining my system more, and that's  starting with keeping my hard drive as tidy and speedy as possible. <!--more-->
 

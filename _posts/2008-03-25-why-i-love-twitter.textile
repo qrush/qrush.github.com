@@ -3,6 +3,7 @@ wordpress_id: 26
 title: Why I love Twitter
 wordpress_url: http://www.litanyagainstfear.com/blog/2008/03/25/why-i-love-twitter/
 layout: post
+category: internet
 ---
 
 I've become quite a <a href="http://twitter.com/qrush">twitterholic</a> the past few days. In fact, let's <a href="http://tweetstats.com/graphs/qrush">check the stats</a>. Yeah, I've been pretty much addicted the past few days. Why? Well, there's a few things I love about Twitter:

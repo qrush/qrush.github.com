@@ -3,6 +3,7 @@ wordpress_id: 29
 title: Rock Band Rocks.
 wordpress_url: http://www.litanyagainstfear.com/blog/2008/03/27/rock-band-rocks/
 layout: post
+category: gaming
 ---
 It simply does. That is all.
 

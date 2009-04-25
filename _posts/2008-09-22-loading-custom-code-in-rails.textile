@@ -3,6 +3,7 @@ wordpress_id: 155
 title: Loading custom code in Rails
 wordpress_url: http://litanyagainstfear.com/?p=155
 layout: post
+category: ruby
 ---
 This is a question I've seen asked (including by myself) in #rubyonrails on Freenode quite a few times, and I figured I'd settle it once and for all. There's a few different ways to get custom code loaded into your Rails app. The first solution to this is understanding how code gets loaded with Ruby in the first place, which I usually get confused with. Let's do a little recap about your different options that Ruby and Rails provides:
 

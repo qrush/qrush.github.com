@@ -3,6 +3,7 @@ wordpress_id: 236
 title: "GitHub Rebase #4"
 wordpress_url: http://litanyagainstfear.com/?p=236
 layout: post
+category: git
 ---
 The latest edition is now up! http://github.com/blog/224-github-rebase-4
 

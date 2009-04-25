@@ -3,6 +3,7 @@ wordpress_id: 210
 title: "GitHub Rebase #1"
 wordpress_url: http://litanyagainstfear.com/?p=210
 layout: post
+category: git
 ---
 This is the start of a new weekly column that going to recap some of the action that's been happening on GitHub during the past week. My goals with this column include:
 

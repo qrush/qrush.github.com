@@ -3,6 +3,7 @@ wordpress_id: 5
 title: Why every programmer should play NetHack
 wordpress_url: http://www.litanyagainstfear.com/blog/2007/10/29/why-every-programmer-should-play-nethack/
 layout: post
+category: gaming
 ---
 
 I have a place in my heart for an obscure text based game called <a href="http://www.nethack.org/" title="nethack.org" target="_blank">NetHack</a>. This game is an archetype <a href="http://en.wikipedia.org/wiki/Roguelike" title="Wikipedia entry on Roguelike." target="_blank">roguelike</a> game, and I've been playing it for over a year now. Not a year in actual game time (yes, I used to play WoW, a lot), but I've been into NetHack seriously for the past 6 months or so, and it still kicks my ass. However, I've managed to <a href="http://alt.org/nethack/player-stats.php?player=DoctorNick" title="My Stats">ascend (beat the game) twice</a>, and I can even play it on my Motorola Q.

@@ -3,6 +3,7 @@ wordpress_id: 85
 title: Raytracers, snowflakes, and Pac-Man, oh my!
 wordpress_url: http://litanyagainstfear.com/?p=85
 layout: post
+category: code
 ---
 So yeah, this is pretty much what I've been up to for the past, oh, 3 months/1 quarter of school. These are a few of the projects I've done for my Computer Graphics 2 class (which I just got an A in, booyah!)
 

@@ -3,6 +3,7 @@ wordpress_id: 7
 title: I&#8217;m afraid of low level programming.
 wordpress_url: http://www.litanyagainstfear.com/blog/2007/11/27/im-afraid-of-low-level-programming/
 layout: post
+category: code
 ---
 It's running right now. Beneath those fancy windows. Under the hood. Shifting bits. Moving words in memory. And its scares the crap out of me.
 

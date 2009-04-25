@@ -3,6 +3,7 @@ wordpress_id: 381
 title: Open Source Collaboration with Git and GitHub
 wordpress_url: http://litanyagainstfear.com/?p=381
 layout: post
+category: git
 ---
 I just gave a talk at the <a href="http://sse.se.rit.edu">Society of Software Engineers</a>' <a href="http://sse.se.rit.edu/programs/tech-talks">Tech Talk Thursdays</a> about <a href="http://git-scm.com">Git</a> and <a href="http://github.com">GitHub</a>. The talk was a mashup of <a href="http://jointheconversation.org/">Scott Chacon's</a> <a href="http://gitisbetterthanx.com">various</a> <a href="http://www.slideshare.net/chacon/getting-git">resources</a> on Git along with <a href="http://michaelhartl.com/">Michael Hartl's</a> <a href="http://www.voicesthatmatter.com/content/downloads/ruby2008/presentations/Hartl.pdf">presentation</a> on contributing to <a href="http://insoshi.com">Insoshi</a> with GitHub. I think it went pretty well and it was followed by some good discussion.
 
