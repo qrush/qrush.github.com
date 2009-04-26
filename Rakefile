@@ -16,7 +16,7 @@ git checkout #{branch}
 git pull origin #{branch}
 git checkout -f
 rm -rf _site
-jekyll 
+jekyll --no-auto
 mv _site ../_#{branch}
 mv ../#{branch} _old
 mv ../_#{branch} ../#{branch}
