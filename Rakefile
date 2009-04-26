@@ -10,11 +10,9 @@ task :deploy do
   password = ask("Password:  ") { |q| q.echo = "*" }
 
   Net::SSH.start('litanyagainstfear.com', username, :port => 1337, :password => password) do |ssh|
-    commands = "cd ~/litanyagainstfear/cached-copy; "
-    branches.each do |branch|
-
-      commands << <<EOF
-git checkout #{branch} 
+    commands = <<EOF
+cd ~/litanyagainstfear/cached-copy
+git checkout #{branch}
 git pull origin #{branch}
 git checkout -f
 rm -rf _site
@@ -24,9 +22,7 @@ mv ../#{branch} _old
 mv ../_#{branch} ../#{branch}
 rm -rf _old
 EOF
-    end
-      commands = commands.gsub(/\n/, "; ")
-      #puts commands
-      ssh.exec commands
+    commands = commands.gsub(/\n/, "; ")
+    ssh.exec commands
   end
 end
