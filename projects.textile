@@ -3,5 +3,24 @@ layout: static
 title: projects
 ---
 
-Updating this soon!
+h3. Open Source
+
+* "Jekyll":http://github.com/mojombo/jekyll: static site generation made easy
+* "Git Ready":http://github.com/qrush/gitready: Usually weekly tips on the Git distributed version control system
+* "Clearance":http://github.com/thoughtbot/clearance: Rails authentication engine for developers that test
+
+h3. Hacks
+
+* "acts_like_git":http://github.com/courtenay/acts_like_git: ActiveRecord backed up by git to allow versioning
+* "beardo":http://github.com/qrush/beardo: Ruby api for Co-op
+* "snake":http://github.com/qrush/snake: A simple snake game, written in Shoes
+* "vim-fu":http://github.com/qrush/vim-fu: Using git submodules to pull down the latest and greatest vim plugins
+
+h3. School
+
+Notable school projects, coming soon once I get them on GitHub.
+
+h3. Professional
+
+Please check out "my resume":http://visualcv.com/nquaranto for this stuff.
 
