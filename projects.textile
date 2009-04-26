@@ -5,7 +5,7 @@ title: projects
 
 h3. Open Source
 
-* "Jekyll":http://github.com/mojombo/jekyll: static site generation made easy
+* "Jekyll":http://github.com/mojombo/jekyll: Static site generation made easy
 * "Git Ready":http://github.com/qrush/gitready: Usually weekly tips on the Git distributed version control system
 * "Clearance":http://github.com/thoughtbot/clearance: Rails authentication engine for developers that test
 
@@ -18,7 +18,7 @@ h3. Hacks
 
 h3. School
 
-Notable school projects, coming soon once I get them on GitHub.
+Coming soon once I get them on GitHub.
 
 h3. Professional
 
