@@ -4,7 +4,7 @@ layout: post
 category: internet
 ---
 
-BarCamp Boston 4 has been a lot of fun. This post is just a roundup of the talks I went to on Sunday. I did give a talk about getting started with git, which seems to have went well.
+BarCamp Boston 4 has been a lot of fun. This post is just a roundup of the talks I went to on Sunday. I gave a talk about "getting started with git":http://drop.io/gitstarted, which seems to have went well.
 
 I've never been to MIT before, and I need to come back and explore the campus more. It was held in the MIT Strata center, which is absolutely ridiculous. The architecture is really just unreal. Also, I can't believe how much pizza a few hundred nerds can down in a manner of minutes.
 
@@ -34,7 +34,14 @@ QR codes are really neat, and can do some ridiculous stuff. They're really aweso
 
 Lots of gripes about the current state of testing JS in the browser. There's plenty of ways to DO testing in the browser, but there doesn't seem to be a be-all, end-all solution. Listing out various testing frameworks, but there doesn't seem to be many familiar with most of them. Complaints, bitching and moaning about how difficult this situation is. It all boils down to not being able to remove the human element from testing it correctly.
 
+*Ruby Testing Panel*
 
+Seems to be a general discussion of what's going on in the Ruby testing world and reactions that people have. Starting off with a rant or reasons why to Test First. Diving into some differences between RSpec and Shoulda and their syntax differences. Some talk about mocking and stubbing and the different libraries. This discussion went for an hour but I skipped out early to make the next talk.
 
+*Introduction to the Arduino*
 
+Should be easy to translate software development experience into the microcontroller world. Throwing some around the room so we can get a look at what they are. Huge advantage: the bootloader. All you need is a USB cable and you can load code on it. There's ways to get around it or write your own too. Ridiculously neat demo: the arduino spins a platter with a thin slot that has LEDs beneath it. There's a lens at the top of the platter that the arduino can hook into, and control the speed of how fast the platter will go. Lots of C code and magic registers that you need data sheets for. I wonder if the Ruby library abstracts any of this away. Data sheets just seem scary, but useful.
 
+*LOLCODE 101*
+
+This isn't 100% serious, but for some reason somebody made a programming language around this meme. I would post some code but pygments doesn't support the language. Best part of the language: DIAF is exiting with a status code.
