@@ -8,4 +8,5 @@ I'll be doing liveblogging of the conference talks that I attend this year. This
 h3. Tuesday
 
 * "DHH Keynote: The real secret to Rails Productivity":/blog/2009/05/05/railsconf-2009-dhh-keynote
+* "A morning with GitHub":/blog/2009/05/05/railsconf-2009-a-morning-with-github
 
