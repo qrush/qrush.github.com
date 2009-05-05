@@ -3,6 +3,8 @@ title: RailsConf 2009 DHH Keynote
 layout: post
 ---
 
+This is part of my series of notes on RailsConf 2009. "Check them all out here.":http://litanyagainstfear.com/blog/2009/05/05/railsconf-2009-notes/
+
 Rails 3! This year marks the fifth year of working with Rails (six really for him). We're largely doing the same things from 5 years ago. Stop fretting so much if you're up to date with the most up to date practices. It's possible to enjoy Rails without knowing everything new that's going on, and definitely not necessary to rewrite apps as a whole that are using the 'old' practicies.
 
 We were supposed to be killed a long time ago. Going through some memories of why Rails isn't supposed to make it. First off: it wasn't 'enterprise-ready'. There was this notion that it was a group of consultants more interested in getting more billable hours and selling their books. This is obviously not the case. It takes time for these arguments to settle.
