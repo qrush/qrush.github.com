@@ -10,6 +10,6 @@ h3. Tuesday
 * "DHH Keynote: The real secret to Rails Productivity":/blog/2009/05/05/railsconf-2009-dhh-keynote
 * "A morning with GitHub":/blog/2009/05/05/railsconf-2009-a-morning-with-github
 * "Rails is From Mars, Ruby is From Venus":/blog/2009/05/05/railsconf-2009-rails-is-from-mars-ruby-is-from-venus
-* "The Future of Deployment":/blog/2009/05/05/the-future-of-deployment
-* "Smacking Git Around":/blog/2009/05/05/smacking-git-around
+* "The Future of Deployment":/blog/2009/05/05/railsconf-2009-the-future-of-deployment
+* "Smacking Git Around":/blog/2009/05/05/railsconf-2009-smacking-git-around
 
