@@ -39,7 +39,7 @@ Going through @git bisect@ and how you can use it to find bugs.
 The git config is full of awesome options (enable with @git config --global@)
 
 * @help.autocorrect 1@: Git will autocomplete commands that you mistype or didn't finish.
-* @color.auto true@: Turn on colors when in the terminal only
+* @color.ui auto@: Turn on colors when in the terminal only
 * Custom merge tools: plenty of ways to configure your own. Check the cheatsheet.
 
 Lots of stuff that can be done with @.gitattributes@. Diffing binary files is one option, which Git usually barfs with. You can tell Git how to diff a binary file. Showing how to set this up. The end result is awesome, @exiftool@ can show you how resolutions changed, etc. This also works on Word Documents! 
