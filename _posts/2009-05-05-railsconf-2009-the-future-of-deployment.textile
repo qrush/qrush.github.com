@@ -1,5 +1,5 @@
 ---
-title: The Future of Deployment
+title: RailsConf 2009 The Future of Deployment
 layout: post
 ---
 

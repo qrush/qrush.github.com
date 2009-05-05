@@ -1,5 +1,5 @@
 ---
-title: Smacking Git Around
+title: RailsConf 2009 Smacking Git Around
 layout: post
 ---
 
