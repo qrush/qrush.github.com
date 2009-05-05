@@ -1,5 +1,5 @@
 ---
-title: RailsConf 2009: DHH Keynote
+title: RailsConf 2009 DHH Keynote
 layout: post
 ---
 

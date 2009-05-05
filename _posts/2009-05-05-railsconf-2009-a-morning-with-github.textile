@@ -1,5 +1,5 @@
 ---
-title: RailsConf 2009: A Morning with GitHub
+title: RailsConf 2009 A Morning with GitHub
 layout: post
 ---
 
