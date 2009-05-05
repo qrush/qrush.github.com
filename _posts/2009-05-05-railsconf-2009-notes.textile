@@ -1,0 +1,10 @@
+---
+title: RailsConf 2009 Notes
+layout: post
+---
+
+I'll be doing liveblogging of the conference talks that I attend this year. This page will be updated throughout the week with links to the notes. Stay tuned!
+
+h3. Tuesday
+
+
