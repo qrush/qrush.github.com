@@ -1,5 +1,5 @@
 ---
-title: RailsConf 2009 What Makes Ruby Go: An Implementation Primer
+title: RailsConf 2009 What Makes Ruby Go An Implementation Primer
 layout: post
 ---
 
