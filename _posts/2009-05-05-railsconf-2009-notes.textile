@@ -19,3 +19,5 @@ h3. Day Two
 * "Chris Wansrath Keynote: Reducing Friction":/blog/2009/05/06/railsconf-2009-chris-wansrath-keynote
 * "Getting to know Ruby 1.9":/blog/2009/05/06/railsconf-2009-getting-to-know-ruby-19
 * "Rails 3 Step off of the Golden Path":/blog/2009/05/06/railsconf-2009-rails-3-step-off-of-the-golden-path
+* "What Makes Ruby Go: An Implementation Primer":/blog/2009/05/06/railsconf-2009-what-makes-ruby-go-an-implementation-primer
+* "Working Effectively with Legacy Rails":/blog/2009/05/06/railsconf-2009-working-effectively-with-legacy-rails
