@@ -5,7 +5,7 @@ layout: post
 
 I'll be doing liveblogging of the conference talks that I attend this year. This page will be updated throughout the week with links to the notes. Stay tuned!
 
-h3. Tuesday
+h3. Day One
 
 * "DHH Keynote: The real secret to Rails Productivity":/blog/2009/05/05/railsconf-2009-dhh-keynote
 * "A morning with GitHub":/blog/2009/05/05/railsconf-2009-a-morning-with-github
@@ -13,3 +13,7 @@ h3. Tuesday
 * "The Future of Deployment":/blog/2009/05/05/railsconf-2009-the-future-of-deployment
 * "Smacking Git Around":/blog/2009/05/05/railsconf-2009-smacking-git-around
 * "Guitar Hero Behind the Music":/blog/2009/05/05/railsconf-2009-guitar-hero-behind-the-music
+
+h3. Day Two
+
+* "Chris Wansrath Keynote: Reducing Friction":/blog/2009/05/06/railsconf-2009-chris-wansrath-keynote
