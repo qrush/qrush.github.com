@@ -12,4 +12,4 @@ h3. Tuesday
 * "Rails is From Mars, Ruby is From Venus":/blog/2009/05/05/railsconf-2009-rails-is-from-mars-ruby-is-from-venus
 * "The Future of Deployment":/blog/2009/05/05/railsconf-2009-the-future-of-deployment
 * "Smacking Git Around":/blog/2009/05/05/railsconf-2009-smacking-git-around
-
+* "Guitar Hero Behind the Music":/blog/2009/05/05/railsconf-2009-guitar-hero-behind-the-music
