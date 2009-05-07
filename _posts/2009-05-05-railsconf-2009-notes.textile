@@ -21,3 +21,4 @@ h3. Day Two
 * "Rails 3 Step off of the Golden Path":/blog/2009/05/06/railsconf-2009-rails-3-step-off-of-the-golden-path
 * "What Makes Ruby Go: An Implementation Primer":/blog/2009/05/06/railsconf-2009-what-makes-ruby-go-an-implementation-primer
 * "Working Effectively with Legacy Rails":/blog/2009/05/06/railsconf-2009-working-effectively-with-legacy-rails
+* "Starting Up Fast: Lessons from the Rails Rumble":/blog/2009/05/06/railsconf-2009-starting-up-fast-lessons-from-the-rails-rumble
