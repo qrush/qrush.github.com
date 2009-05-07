@@ -1,5 +1,5 @@
 ---
-title: RailsConf 2009 Webrat Rails Acceptance Testing
+title: RailsConf 2009 Webrat Rails Testing Evolved
 layout: post
 ---
 
