@@ -22,3 +22,4 @@ h3. Day Two
 * "What Makes Ruby Go: An Implementation Primer":/blog/2009/05/06/railsconf-2009-what-makes-ruby-go-an-implementation-primer
 * "Working Effectively with Legacy Rails":/blog/2009/05/06/railsconf-2009-working-effectively-with-legacy-rails
 * "Starting Up Fast: Lessons from the Rails Rumble":/blog/2009/05/06/railsconf-2009-starting-up-fast-lessons-from-the-rails-rumble
+* "Robert Martin Keynote: What killed Smalltalk could kill Ruby too":/blog/2009/05/06/railsconf-2009-robert-martin-keynote
