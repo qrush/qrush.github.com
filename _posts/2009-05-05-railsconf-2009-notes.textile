@@ -27,3 +27,4 @@ h3. Day Two
 h3. Day Three
 
 * "Webrat: Rails Testing Evolved":/blog/2009/05/07/railsconf-2009-webrat-rails-testing-evolved
+* "And the Greatest of these is...Rack support":/blog/2009/05/07/and-the-greatest-of-these-is-rack-support
