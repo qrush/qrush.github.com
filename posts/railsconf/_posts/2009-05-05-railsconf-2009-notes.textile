@@ -28,4 +28,4 @@ h3. Day Three
 
 * "Webrat: Rails Testing Evolved":/blog/2009/05/07/railsconf-2009-webrat-rails-testing-evolved
 * "And the Greatest of these is...Rack support":/blog/2009/05/07/railsconf-2009-and-the-greatest-of-these-is-rack-support
-* "Automated Code Quality Checking in Ruby and Rails":/blog/2009/05/07/railsconf-2009-automated-code-quality-in-ruby-and-rails
+* "Automated Code Quality Checking in Ruby and Rails":/blog/2009/05/07/railsconf-2009-automated-code-quality-checking-in-ruby-and-rails/
