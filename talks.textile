@@ -1,0 +1,20 @@
+---
+layout: static
+title: talks
+---
+
+h3. 2009
+
+h4. Git Started with Git
+
+Presented at "Boston.rb":http://bostonrb.org, "NHRuby":http://nhruby.org, and "BarCamp Boston 4":http://www.barcampboston.org/.
+
+<div style="width:425px;text-align:left" id="__ss_1373874"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/qrush/git-started-with-git" title="Git Started With Git">Git Started With Git</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=gitstartedwithgit-nhruby-090501133113-phpapp02&stripped_title=git-started-with-git" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=gitstartedwithgit-nhruby-090501133113-phpapp02&stripped_title=git-started-with-git" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object>
+
+h3. 2008
+
+h4. Open Source Collaboration With Git And GitHub
+
+Presented to the Society of Software Engineers at RIT at their Thursday Tech Talk.
+
+<div style="width:425px;text-align:left" id="__ss_819316"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/qrush/open-source-collaboration-with-git-and-git-hub-presentation-819316" title="Open Source Collaboration With Git And Git Hub">Open Source Collaboration With Git And Git Hub</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=opensourcecollaborationwithgitandgithub1228427160717862812284469878819539-1228448536513247-9&stripped_title=open-source-collaboration-with-git-and-git-hub-presentation-819316" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=opensourcecollaborationwithgitandgithub1228427160717862812284469878819539-1228448536513247-9&stripped_title=open-source-collaboration-with-git-and-git-hub-presentation-819316" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object>
