@@ -5,7 +5,7 @@ layout: post
 
 The concept is simple: Get a bunch of developers together for a weekend away from the internet and most of civilization to have fun and relax. To be honest, I didn't get to relax much, but it was made up in spades just by how awesome the event was.
 
-p=. !http://railscamps.com/images/yield.png!
+"<p style="text-align:center;"><img style="padding:5px; background: #fff" src="http://railscamps.com/images/yield.png" /></p>":http://railscamps.com
 
 The venue was the "Maine MountainView House":http://www.themainehouses.com/mountain_house/mountain_house.php in "Bryant Pond, ME":http://maps.google.com/maps?q=bryant+pond,+me&oe=utf-8&rls=com.ubuntu:en-US:unofficial&client=firefox-a&um=1&ie=UTF-8&split=0&gl=us&ei=42BkSrOdNYXeNbClrPcB&sa=X&oi=geocode_result&ct=title&resnum=1 I'm sure others will post better pictures soon, but the pond itself was beautiful. A dock, fire pit, and plenty of chairs made for some fun smore-making and "werewolf":http://en.wikipedia.org/wiki/Mafia_(party_game) games. The house was huge and definitely stood up to nearly 30 developers' antics throughout the weekend.
 
