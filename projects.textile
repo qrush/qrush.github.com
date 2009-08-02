@@ -3,14 +3,14 @@ layout: static
 title: projects
 ---
 
-h3. Major Projects
+h3. Major
 
 * "enforcer":http://github.com/thoughtbot/enforcer: DSL for managing lots of github collaborators
 * "gemcutter":http://github.com/qrush/gemcutter: Awesome gem hosting
 * "jekyll":http://github.com/mojombo/jekyll: Static site generation made easy
 * "report_card":http://github.com/thoughtbot/report_card: Build metrics from your CI server
 
-h3. Mini Projects
+h3. Mini
 
 * "beardo":http://github.com/qrush/beardo: Ruby api for Co-op
 * "snake":http://github.com/qrush/snake: A simple snake game, written in Shoes

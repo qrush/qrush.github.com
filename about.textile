@@ -3,9 +3,9 @@ layout: static
 title: about
 ---
 
-Welcome to the blog of Nick Quaranto! This is where I hope I can share a bit of my life with some added spice on my little corner of the internet. <a href="/contact.html">Want to get a hold of me?</a>
+Welcome, and thanks for reading. If you want to contact me, check out the contact links on the sidebar.
 
-Oh yeah, what is the <a href="http://alcoman.railfan.net/fear.html">Litany Against Fear</a>? It's from the <a href="http://en.wikipedia.org/wiki/Dune_(novel)">Dune novels by Frank Herbert</a>:
+What is the <a href="http://alcoman.railfan.net/fear.html">Litany Against Fear</a>? It's from the <a href="http://en.wikipedia.org/wiki/Dune_(novel)">Dune novels by Frank Herbert</a>:
 
 p=. *I must not fear.
 Fear is the mind-killer.
