@@ -3,6 +3,8 @@ title: On Gem Forking
 layout: post
 ---
 
+p=. !http://cloud.github.com/downloads/qrush/litanyagainstfear/fork2.JPG!
+
 So, "GitHub has recommended Gemcutter":http://github.com/blog/515-gem-building-is-defunct as an alternative to hosting gems on GitHub. There of course, seems to be an outcry, for three main reasons that I can see:
 
 1) Effort must be made to move documentation and install instructions
