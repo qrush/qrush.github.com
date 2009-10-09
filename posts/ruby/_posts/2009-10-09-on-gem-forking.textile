@@ -25,7 +25,7 @@ If a fork is going to be long-term, or a true alternative, it should probably be
 
 Like I stated above, 'gem forking' is still supported just because of the nature of how Gemcutter works. I felt there needed to be a longer term solution for this in general, since now the community has grown used to it. This "lively discussion":http://wiki.github.com/qrush/gemcutter/fork-support ensued, and after some deliberation we're going to use subdomains in order to solve the problem.
 
-The idea is this: you'll be able to register your own subdomain on gemcutter.org, such as @qrush.gemcutter.org@, and we'll give you a completely blank index to push to. Hopefully you'll be able to add others like the "gem owner" system works now. I feel this feature needs to be used in the following ways:
+The idea is this: you'll be able to register your own subdomain on gemcutter.org, such as @qrush.gemcutter.org@, and we'll give you a completely blank index to push to. Hopefully you'll be able to add others like the "gem owner":http://gemcutter.org/pages/gem_docs#owner system works now. I feel this feature needs to be used in the following ways:
 
 1) Subdomain use should be infrequent. It's for trial/forked gems that shouldn't be relied on for production.
 2) Use prerelease versions for development snapshots (version numbers like 1.0.0pre, @gem install yourgem --prerelease@)
