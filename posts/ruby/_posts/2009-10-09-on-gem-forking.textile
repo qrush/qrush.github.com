@@ -5,7 +5,7 @@ layout: post
 
 p=. !http://cloud.github.com/downloads/qrush/litanyagainstfear/fork2.JPG!
 
-So, "GitHub has recommended Gemcutter":http://github.com/blog/515-gem-building-is-defunct as an alternative to hosting gems on GitHub. There of course, seems to be an outcry, for three main reasons that I can see:
+So, "GitHub has recommended Gemcutter":http://github.com/blog/515-gem-building-is-defunct as an alternative to hosting gems on GitHub. Of course, there seems to be an outcry, for three main reasons that I can see:
 
 1) Effort must be made to move documentation and install instructions
 2) Gem forking is not possible with the new site
@@ -13,7 +13,7 @@ So, "GitHub has recommended Gemcutter":http://github.com/blog/515-gem-building-i
 
 As for #1, you've got a year to update your user base and get gems off GitHub. I'd assume that any actively maintained project has figured Gemcutter out by then. And for #3, at least we've got a new service that works and can meet the same needs.
 
-Regarding RubyGem forking, I'd like to state that this statement is *false*. Gemcutter accepts built gems, so you simply need to mimic the actions that GitHub's gem builder did: Open your .gemspec up, append your username to the name, and save. @gem build@, @gem push@, and done.
+Regarding RubyGem forking, I'd like to state that this statement is *false*. Gemcutter accepts built gems, so you simply need to mimic the actions that GitHub's gem builder did: Open your .gemspec up, append your username to the gem name, and save. @gem build@, @gem push@, and done.
 
 I think an important distinction must be made here: *gem forking != scm forking*. GitHub made it easy for anyone to automatically push modifications to gems, but there's a bigger picture to think of here. Hopefully at some point, the changes you made will be brought back into the mainline gem. As "David Dollar":http://daviddollar.org/ so eloquently puts it:
 
