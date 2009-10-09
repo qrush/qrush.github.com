@@ -3,7 +3,7 @@ title: On Gem Forking
 layout: post
 ---
 
-So, "GitHub has recommended Gemcutter":http://github.com/blog/515-gem-building-is-defunct as an alternative to hosting gems on GitHub. There of course, seems to be an outcry, for two main reasons that I can see:
+So, "GitHub has recommended Gemcutter":http://github.com/blog/515-gem-building-is-defunct as an alternative to hosting gems on GitHub. There of course, seems to be an outcry, for three main reasons that I can see:
 
 1) Effort must be made to move documentation and install instructions
 2) Gem forking is not possible with the new site
