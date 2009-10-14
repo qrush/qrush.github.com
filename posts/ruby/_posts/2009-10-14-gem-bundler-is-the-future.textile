@@ -62,7 +62,7 @@ end
 Some notes here:
 
 * By default the gem host is @gems.rubyforge.org@, so I've cleared the sources to use gemcutter.org instead.
-* You can easily specify gems for a given environment with @only :env_name@. Thank goodness.
+* You can easily specify gems for a given environment and multiple gems with @only@ and pass it a symbol for the environment name. Thank goodness.
 * The default bundle path is @vendor/gems@. This won't work for Rails since it assumes way too much about this directory, so we switch it to @vendor/bundler_gems@. *Note:* Yehuda has told me that this will work as normal once Rails 3 is closer/done.
 
 *Bundle up!*
