@@ -63,7 +63,7 @@ Some notes here:
 
 * By default the gem host is @gems.rubyforge.org@, so I've cleared the sources to use gemcutter.org instead.
 * You can easily specify gems for a given environment with @only :env_name@. Thank goodness.
-* The default bundle path is @vendor/gems@. This won't work for Rails since it assumes way too much about this directory, so we switch it to @vendor/bundler_gems@.
+* The default bundle path is @vendor/gems@. This won't work for Rails since it assumes way too much about this directory, so we switch it to @vendor/bundler_gems@. *Note:* Yehuda has told me that this will work as normal once Rails 3 is closer/done.
 
 *Bundle up!*
 
@@ -127,16 +127,16 @@ Then, in each @config/environments/*.rb@ file:
 Bundler.require_env RAILS_ENV
 {% endhighlight %}
 
-This basically does a @require@ for every gem listed in your Gemfile and their associated dependencies. That should be it! Your app should (hopefully) boot and now you run your tests to ensure your application is still working right.
+This basically does a @require@ for every gem listed in your Gemfile and their associated dependencies. That should be it! Your app should (hopefully) boot and now you should run your tests to ensure your application is still working right.
 
 If you want to see this all in action "clone Gemcutter":http://github.com/qrush/gemcutter and follow the "contribution guidelines for getting up and running":http://wiki.github.com/qrush/gemcutter/contribution-guidelines.
 
 *Issues*
 
-So, I've had a few roadblocks with the bundler, and I don't think it would be fair to not mention them.
+So, I had a few roadblocks with the bundler, and I don't think it would be fair to not mention them.
 
 * The documentation sucks. I'm hoping this will improve before Rails 3 is ready (whenever that is). Maybe a Rails guide would be appropriate, and I'll definitely help start it.
-* Gemcutter's on Heroku, so it's necessary to check in a lot of the vendored code (in fact, all of the development/production dependencies). The only bad part about this is the repo has a lot of vendored code. The nice part? New contributors just have to run @gem bundle -u@ to get up to speed.
+* Gemcutter's on Heroku, so it's necessary to check in a lot of the vendored code (in fact, all of the development/production dependencies). New contributors just have to run @gem bundle -u@ to get the test dependencies.
 * In my staging environment I had to use @Bundler.require_env "production"@. Pretty self-explanatory but I missed it at first.
 * Shoulda macros just stopped working, since it assumes the location of gems in @vendor/gems@ or @vendor/plugins@. I had to include this in @test/test_helper.rb@ to make it happy:
 
@@ -145,5 +145,7 @@ Shoulda.autoload_macros(Rails.root, "vendor/bundler_gems/gems/*")
 {% endhighlight %}
 
 *Wrapup*
+
+This guide went over how to use Bundler today, with a Rails 2.3.4 app. According to Yehuda, this eventually will be packaged in Rails 3, so the commands will be baked into Rails...so something like @script/bundle@. The nice thing is that you can use the bundler with any Ruby project, so this is good to know in general.
 
 The bundler is really the future of gem dependency management. If you're sick of fighting with @config.gem@'s or are starting a new app it would be well worth your time to start looking at it. If you're having trouble with the bundler (or success stories!) feel free to comment here or hop in @#carlhuda@ on @irc.freenode.net@. Check it out on "GitHub":http://github.com/wycats/bundler if you haven't yet.
