@@ -30,22 +30,21 @@ a:hover {
 
 
 pre, code {
--x-system-font:none;
-font-family:Monaco,"Courier New",monospace;
-font-size-adjust:none;
-font-stretch:normal;
-font-style:normal;
-font-variant:normal;
-font-weight:normal;
-line-height:normal;
+  -x-system-font:none;
+  font-family:"Bitstream Vera Sans Mono", Monaco, "Courier New", monospace;
+  font-size-adjust:none;
+  font-stretch:normal;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  line-height:normal;
 }
 
 pre {
   background-color: #ccc;
   border: 2px solid #333;
-  padding-left: 10px;
-  padding-top: 10px;
-  line-height: 10px;
+  padding: 10px;
+  line-height: 16px;
 }
 
 h1 a:link, h1 a:visited, h1 a:hover {
@@ -124,10 +123,6 @@ h3 {
 li { margin-bottom: 4px; }
 
 p, ul, ol { margin-bottom: 18px; }
-
-ul, ol {
-  margin-left: 2em;
-}
 
 ul { list-style-type: square; }
 
