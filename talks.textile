@@ -3,6 +3,24 @@ layout: static
 title: talks
 ---
 
+h3. gemcutter: the next step of gem hosting
+
+Presented at "Ruby Conf 2009":http://rubyconf.org
+
+p=. "!/images/gemcutter.png!":http://next.heroku.com/
+
+h3. rack: http 200 ok
+
+An introduction to "Rack":http://rack.rubyforge.org, presented Winter quarter to the Society of Software Engineers.
+
+p=. "!/images/rack.png!":http://http200ok.heroku.com/
+
+h3. quid est testing?
+
+An introduction to testing and TDD with a bit of Ruby, presented Fall quarter to the Society of Software Engineers.
+
+p=. "!/images/quid.png!":http://quid.heroku.com/
+
 h3. Git Started with Git
 
 Presented at "Boston.rb":http://bostonrb.org, "NHRuby":http://nhruby.org, and "BarCamp Boston 4":http://www.barcampboston.org/ in April 2009.
