@@ -43,7 +43,7 @@ Same deal, you've probably done something like @if RAILS_ENV == "production"@ in
 => ActiveSupport::StringInquirer
 </code></pre>
 
-Whaaaat? Actually this is a really neat utility. From @activesupport/lib/active_support/string_inquirer.rb@:
+"Whaaaat?":http://www.hulu.com/watch/124915/family-guy-back-to-jail#s-p1-sr-i1 Actually, this is a really neat utility. From @activesupport/lib/active_support/string_inquirer.rb@:
 
 {% highlight ruby %}
 module ActiveSupport
@@ -123,7 +123,7 @@ The new @Rails::Application@ class encapsulates *a lot* of what was thrown aroun
 >> Rails.application.routes
 => #<ActionDispatch::Routing::RouteSet:0x162877c ...
 
-> Rails.application.routes.recognize_path("rails/info/properties")
+>> Rails.application.routes.recognize_path("rails/info/properties")
 => {:controller=>"rails/info", :action=>"properties"}
 </code></pre>
 
@@ -156,4 +156,4 @@ This gives you global access to all of the configuration data set up in your @co
 
 h2. Wrapup
 
-I'm sure some are missing here, but these are the ones that I think matter most to Rails developers. If something else should be covered here, let me know!
+I'm sure some are missing here (like @Rails.version@), but these are the ones that I think matter most to Rails developers. If something else should be covered here, let me know!
