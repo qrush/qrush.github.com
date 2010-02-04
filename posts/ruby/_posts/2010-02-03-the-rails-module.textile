@@ -27,7 +27,7 @@ This is a big one. Every Rails developer has done @File.join(RAILS_ROOT, "path",
 >> Rails.root.join("config", "database.yml")
 => #<Pathname:/Users/qrush/Dev/ruby/new_app/config/database.yml>
 
->> File.read(_)
+>> _.read
 => "development:\n ...
 </pre></code>
 
