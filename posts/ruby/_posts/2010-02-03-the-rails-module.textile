@@ -14,7 +14,7 @@ Railties now deprecates:
 @RAILS_DEFAULT_LOGGER@ in favour of @Rails.logger@.
 </blockquote>
 
-Awesome! But these have been around for a while in Rails, and it's about damn time you start using them properly. There's also some other helpful methods on the @Rails@ module we'll explore in this post.
+Great...but why? Better alternatives have existed for a while in Rails core (some since 2.1.0), and it's about damn time you start using them properly. There's also some other helpful methods on the @Rails@ module we'll explore in this post.
 
 h2. Rails.root
 
