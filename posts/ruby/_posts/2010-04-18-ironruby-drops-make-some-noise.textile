@@ -7,7 +7,7 @@ A little context about myself and recent events:
 
 # I used to be big into .NET before Ruby.
 # "I decided to move away from .NET over 2 years ago.":http://litanyagainstfear.com/blog/2008/09/18/switching-to-rails/
-# For the past 6 months I've been using ASP.NET MVC 2 for my senior capstone project
+# For the past 4 months I've been using ASP.NET MVC 2 for my senior capstone project.
 # "IronRuby's 1.0 release has dropped!":http://www.rubyinside.com/ironruby-1-0-released-microsoft-s-3-years-with-ruby-pay-off-3212.html
 
 This week "Scott Bellware wrote":http://blog.scottbellware.com/2010/04/ironruby-drops-does-it-make-sound.html about why this should matter to anyone doing .NET, especially the 'forward thinking' "ALT.NET":http://altdotnet.org crowd. I'm not too familiar with the history of the ALT.NET movement, but I love following smart developers in any sector of our industry on Twitter and I've been watching more .NET devs lately because of my senior project.
