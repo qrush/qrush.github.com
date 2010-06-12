@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>litany against fear &curren; by nick quaranto &curren; RailsConf 2009 Webrat Rails Testing Evolved</title>
+   <meta name="author" content="Nick Quaranto" />
+   <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" />
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div class="container_12">
+    <div id="links" class="grid_2">
+      <a href="/about.html">about</a>
+      <a href="/projects.html">projects</a>
+      <a href="http://visualcv.com/nquaranto/">resume</a>
+      <a href="/talks.html">talks</a>
+      <a href="/written.html">written</a>
+      <br />
+      <a href="mailto:nick@quaran.to">email</a>
+      <a href="http://feeds2.feedburner.com/LitanyAgainstFear">rss</a>
+      <a href="http://twitter.com/qrush">twitter</a>
+      <a href="http://qrush.tumblr.com">tumblr</a>
+      <a href="http://www.workingwithrails.com/person/14728-nick-quaranto">wwr</a>
+    </div>
+    <div id="main" class="grid_8">
+      <h1><a href="/">litany against fear</a></h1>
+      <div id="subtitle">coding with spice &curren; by nick quaranto</div>
+      <hr />
+      <div id="post">
+  <h2><a href="/blog/2009/05/07/railsconf-2009-webrat-rails-testing-evolved">
+    RailsConf 2009 Webrat Rails Testing Evolved
+  </a></h2>
+  <div id="date">published 07 May 2009</div>
+  <p>This is part of my series of notes on RailsConf 2009. <a href="http://litanyagainstfear.com/blog/2009/05/05/railsconf-2009-notes/">Check them all out here.</a></p>
+<p>This talk is from Bryan Helmkamp.</p>
+<p>Webrat = Ruby Acceptance Testing for Web Applications. Let&#8217;s say you&#8217;re creating a form: you want to know the code works as expected, and you want to ensure it still works when you make changes. The solution: writing tests.</p>
+<p>Integration testing is built into Rails, and it does plenty of stuff already: creating requests, checking responses, determining what is on the page, and submitting the form on the page as well. It definitely works, but it&#8217;s verbose and requires way too much work. This is why Webrat was started: to make this process easier so people actually use it and want to write it.</p>
+<p>Webrat has a very conversational tone, it&#8217;s like walking someone through the website. The basics:</p>
+<p><code>visit [path]</code>: Pretty much the same as the traditional Rails way of loading the page.<br />
+<code>click_link "name"</code>: Uses Nokogiri to search through all of anchor tags and finds the link with that text. It then finds the href and it will follow whatever path is given. It&#8217;s a &#8220;browser simulator&#8221;.<br />
+<code>fill_in</code>: Finds the input you&#8217;re referring to and simulates actually entering information in, but without a browser.<br />
+<code>click_button</code>: Submitting form, which infers what <span class="caps">URL</span> to post to by looking up the form element it&#8217;s scoped to.</p>
+<p>Getting started: Hook up the gem, some inital setup for your environment and you&#8217;re set. The core <span class="caps">API</span> is pretty small, and it&#8217;s all you really need to work with most web forms on a daily basis. It&#8217;s also test framework agnostic, and can even be used in <span class="caps">IRB</span>. It&#8217;s mostly used with Cucumber now, but what&#8217;s important is that the two are separate. There&#8217;s adapters for the big web frameworks: Rails, Merb, and Sinatra.</p>
+<p>Some of the magic with Webrat happens due to the locator strategies. Usually it&#8217;ll just work, and especially with forms it can work off of a <code>label</code> tag with a <code>for</code> attribute. There&#8217;s also other ways to get elements if you need a less&#8230;magical way.</p>
+<p>Webrat is meant for testing web apps, and checks all of the following:</p>
+<ul>
+	<li>Verify <span class="caps">HTTP</span> status codes</li>
+	<li>Verify form fields exist</li>
+	<li>Verify <span class="caps">HTML</span> content</li>
+</ul>
+<p>Plenty of awesome matchers/assertions baked in:</p>
+<ul>
+	<li><code>contain</code>: Checking text in the response body.</li>
+	<li><code>have_selector</code>: Ensuring elements are on the page with the given <span class="caps">CSS</span> selector and some attributes/content if specified</li>
+	<li><code>have_xpath</code>: Pretty obvious, a bit more powerful. Neat fact: Nokogiri actually converts <span class="caps">CSS</span> selectors to XPath.</li>
+</ul>
+<p>Debug with <code>save_and_open_page</code>, which opens a temporary file of what Webrat is looking at.</p>
+<p>There&#8217;s also adapters for Selenium and Mechanize adapters. It can be used outside of the verification context. The Mechanize session object can be used for screen scraping for example. This is being used by some to test existing web apps in other languages that want to convert to Ruby slowly, and the tests still work just the same during the process.</p>
+<p>Selenium is now fully supported with Webrat. The library handles booting up both a Selenium and Rails server for you. It&#8217;s pretty easy to use the standard Webrat <span class="caps">API</span> and drop into Selenium when you need to. The main problem here: it&#8217;s <span class="caps">SLOW</span>. Get around this by writing only what&#8217;s necessary in Selenium, since Webrat itself is way faster.</p>
+<p>Rack is going to help a lot with cleaning up Webrat, since they don&#8217;t want to maintain adapters for every Ruby web framework out there. This is what Rack::Test was created for, and it will hopefully be integrated in for Rails 3.</p>
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/litanyagainstfear/embed.js"></script><noscript><a href="http://litanyagainstfear.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+      <hr />
+      <div id="footer">
+        <a href="http://github.com/qrush/litanyagainstfear">managed by github</a>
+        &curren;
+        <a href="http://github.com/mojombo/jekyll">generated by jekyll</a>
+        &curren;
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">licensed by creative commons</a>
+        &curren;
+        <a href="http://slicehost.com">served by slicehost</a>
+      </div>
+    </div>
+    <div id="categories" class="grid_2">
+      <a href="/code.html">code (2)</a>
+      <a href="/gaming.html">gaming (3)</a>
+      <a href="/git.html">git (9)</a>
+      <a href="/internet.html">internet (5)</a>
+      <a href="/prorubyconf.html">prorubyconf (25)</a>
+      <a href="/railsconf.html">railsconf (17)</a>
+      <a href="/ruby.html">ruby (10)</a>
+      <a href="/windows.html">windows (3)</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-2896263-1");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>

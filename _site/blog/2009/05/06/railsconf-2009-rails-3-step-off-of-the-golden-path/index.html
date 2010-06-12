@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>litany against fear &curren; by nick quaranto &curren; RailsConf 2009 Rails 3 Step off of the Golden Path</title>
+   <meta name="author" content="Nick Quaranto" />
+   <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" />
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div class="container_12">
+    <div id="links" class="grid_2">
+      <a href="/about.html">about</a>
+      <a href="/projects.html">projects</a>
+      <a href="http://visualcv.com/nquaranto/">resume</a>
+      <a href="/talks.html">talks</a>
+      <a href="/written.html">written</a>
+      <br />
+      <a href="mailto:nick@quaran.to">email</a>
+      <a href="http://feeds2.feedburner.com/LitanyAgainstFear">rss</a>
+      <a href="http://twitter.com/qrush">twitter</a>
+      <a href="http://qrush.tumblr.com">tumblr</a>
+      <a href="http://www.workingwithrails.com/person/14728-nick-quaranto">wwr</a>
+    </div>
+    <div id="main" class="grid_8">
+      <h1><a href="/">litany against fear</a></h1>
+      <div id="subtitle">coding with spice &curren; by nick quaranto</div>
+      <hr />
+      <div id="post">
+  <h2><a href="/blog/2009/05/06/railsconf-2009-rails-3-step-off-of-the-golden-path">
+    RailsConf 2009 Rails 3 Step off of the Golden Path
+  </a></h2>
+  <div id="date">published 06 May 2009</div>
+  <p>This is part of my series of notes on RailsConf 2009. <a href="http://litanyagainstfear.com/blog/2009/05/05/railsconf-2009-notes/">Check them all out here.</a></p>
+<p>This talk is from Matt Aimonetti. There&#8217;s a lot of talk about &#8220;the merge&#8221; but not many know why or what happened. Going through the history, starting from the principles behind Ruby, and the process of how Rails came about. The big principles behind Rails: Convention over Configuration, Don&#8217;t Repeat Yourself.</p>
+<p>At some point there was a schism from Rails, and this was Merb. Merb was focused on performance and agnosticism. Lots of drama as time went on and plenty of tension. They finally sat down and talked, and they had the same goals but just had different perspectives.</p>
+<p>What&#8217;s in store for Rails 3:</p>
+<ul>
+	<li>Improved performance. Merb was a speed demon, it&#8217;s time to bring that into Rails.</li>
+	<li>Increased modularity. Bringing this to the next level.</li>
+	<li>Agnosticism in general throughout the framework.</li>
+	<li>Public <span class="caps">API</span>, ensure that plugins won&#8217;t break.</li>
+	<li>Mountable apps with Rack</li>
+</ul>
+<p>The Rails 3 default stack: ActiveRecord, Prototype, <span class="caps">ERB</span>, Test::Unit. No huge changes for end users. Instead of one &#8220;Rails Way&#8221; there&#8217;s going to be many &#8220;Rails Ways&#8221;. A big difference is that Rails 3 will be less opinionated. Not all apps are going to be the same, and this just recognizes it.</p>
+<p>When should you step off the default stack? According to Matt, he believes that it&#8217;s a question of taste along with the requirements given to you.</p>
+<p>Will be able to pick and choose the JavaScript engine you want. For templating engines, it&#8217;s not that big of a change since there&#8217;s really only 2 choices. The more difficult choice will be the <span class="caps">ORM</span>. It will be possible to seamlessly swap between the various ORMs available. One of these is DataMapper, which has a lot of great benefits that ActiveRecord doesn&#8217;t. It&#8217;s uses lazy loading along with a smarter way of dealing with potential N+1 select problems that plagues ActiveRecord. Some other neat features: ways to move/migrate from older column names, and a really nice way to define complex queries with <code>Query::Path</code>. Tons of adapters too.</p>
+<p>Other adapters such as Sequel or Hibernate will work. Plenty of non-<span class="caps">RDBMS</span> systems being considered as well. CouchDB, Redis, Tokyo Cabinet, etc will hopefully be easy to build adapters for.</p>
+<p>Create your own Rails: define your own file structure, your own router <span class="caps">DSL</span>, and even your own ways to deal with requests. The goal is that the audience for Rails will expand even further, and perhaps grow into places that we can&#8217;t even see now.</p>
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/litanyagainstfear/embed.js"></script><noscript><a href="http://litanyagainstfear.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+      <hr />
+      <div id="footer">
+        <a href="http://github.com/qrush/litanyagainstfear">managed by github</a>
+        &curren;
+        <a href="http://github.com/mojombo/jekyll">generated by jekyll</a>
+        &curren;
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">licensed by creative commons</a>
+        &curren;
+        <a href="http://slicehost.com">served by slicehost</a>
+      </div>
+    </div>
+    <div id="categories" class="grid_2">
+      <a href="/code.html">code (2)</a>
+      <a href="/gaming.html">gaming (3)</a>
+      <a href="/git.html">git (9)</a>
+      <a href="/internet.html">internet (5)</a>
+      <a href="/prorubyconf.html">prorubyconf (25)</a>
+      <a href="/railsconf.html">railsconf (17)</a>
+      <a href="/ruby.html">ruby (10)</a>
+      <a href="/windows.html">windows (3)</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-2896263-1");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>

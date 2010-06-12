@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>litany against fear &curren; by nick quaranto &curren; Demystifying Rails Plugin Development Notes</title>
+   <meta name="author" content="Nick Quaranto" />
+   <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" />
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div class="container_12">
+    <div id="links" class="grid_2">
+      <a href="/about.html">about</a>
+      <a href="/projects.html">projects</a>
+      <a href="http://visualcv.com/nquaranto/">resume</a>
+      <a href="/talks.html">talks</a>
+      <a href="/written.html">written</a>
+      <br />
+      <a href="mailto:nick@quaran.to">email</a>
+      <a href="http://feeds2.feedburner.com/LitanyAgainstFear">rss</a>
+      <a href="http://twitter.com/qrush">twitter</a>
+      <a href="http://qrush.tumblr.com">tumblr</a>
+      <a href="http://www.workingwithrails.com/person/14728-nick-quaranto">wwr</a>
+    </div>
+    <div id="main" class="grid_8">
+      <h1><a href="/">litany against fear</a></h1>
+      <div id="subtitle">coding with spice &curren; by nick quaranto</div>
+      <hr />
+      <div id="post">
+  <h2><a href="/blog/2008/11/18/demystifying-rails-plugin-development-notes">
+    Demystifying Rails Plugin Development Notes
+  </a></h2>
+  <div id="date">published 18 Nov 2008</div>
+  <p>Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="../blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a></p>
+<p>This talk is from Nick Plante.</p>
+<p>Work more on the &#8216;special sauce&#8217; of Rails. Plugins can save you a <span class="caps">LOT</span> of time! Generalized, reusable code libraries. Lets us mold the Rails framework into what we want it to be and make it more powerful. It&#8217;s a lot easier than you think! Some examples: User authentication, Pagination, Asychronous Processing, View Helpers.</p>
+<p>Why develop them? Internal reuse, opportunity to refactor &amp; clean up. Also contributes to the Ruby <span class="caps">OSS</span> ecosystem! Most plugins don&#8217;t start as plugins. They really shouldn&#8217;t&#8230;they&#8217;re extracted/generalized.</p>
+<p>Nick is going over an example of making a plugin for validating <span class="caps">ISBN</span> numbers. Lots of messy code lives in the model&#8230;it can hit a limit. Extract it! Use encapsulation and information hiding&#8230;Extract into /lib, or better yet, make a plugin!</p>
+<p>When designing the interface for a plugin, <span class="caps">KISS</span>. Extend the Rails <span class="caps">DSL</span> in a natural way&#8230;many pre-existing examples to guide us (ActiveRecord::Validations in this case). Showing some examples of plugins, from Paperclip, acts_as_list, some for ActionController and ActionView too.</p>
+<p>Make people learn as <span class="caps">LITTLE</span> new stuff as possible to use your plugin. Showing off an example module for the <span class="caps">ISBN</span> validation. Some methods I haven&#8217;t seen before: extract_options! validates_each</p>
+<p>Why is it a module and not a class? A module is a degenerate abstract class and can be mixed into a class. Include for instance methods, extend for class methods.</p>
+<p>Plugin hooks! Install.rb: Auto-run when the plugin is installed with script/plugin install. Used to show the readme and copy any assets over. (Uninstall.rb for the opposite). Init.rb is used to inject plugin code into the framework, runs when the application is started. Common idiom is to use self.included to extend modules as well.</p>
+<p><span class="caps">NEED</span> <span class="caps">TESTS</span>. (<span class="caps">TATFT</span>!) If you&#8217;ve extracted it, you should have the tests. Right? Some strategies: mock/stub out the environment if possible. Rake tasks are generated for helping out with testing plugins too. RSpec also has a plugin generator.</p>
+<p>Distributing plugins is super easy. Any old <span class="caps">SVN</span>/Git repo, RubyForge, GitHub. They can also be packaged as Gems and use the various rake tasks for gem installing/unpacking. Why use Gems? They have proper versioning and dependency management. GitHub makes creating gems super easy.</p>
+<p>Don&#8217;t be afraid! Read the Rails source too.</p>
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/litanyagainstfear/embed.js"></script><noscript><a href="http://litanyagainstfear.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+      <hr />
+      <div id="footer">
+        <a href="http://github.com/qrush/litanyagainstfear">managed by github</a>
+        &curren;
+        <a href="http://github.com/mojombo/jekyll">generated by jekyll</a>
+        &curren;
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">licensed by creative commons</a>
+        &curren;
+        <a href="http://slicehost.com">served by slicehost</a>
+      </div>
+    </div>
+    <div id="categories" class="grid_2">
+      <a href="/code.html">code (2)</a>
+      <a href="/gaming.html">gaming (3)</a>
+      <a href="/git.html">git (9)</a>
+      <a href="/internet.html">internet (5)</a>
+      <a href="/prorubyconf.html">prorubyconf (25)</a>
+      <a href="/railsconf.html">railsconf (17)</a>
+      <a href="/ruby.html">ruby (10)</a>
+      <a href="/windows.html">windows (3)</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-2896263-1");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>

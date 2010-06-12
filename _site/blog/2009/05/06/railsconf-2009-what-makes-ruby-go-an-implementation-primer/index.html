@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>litany against fear &curren; by nick quaranto &curren; RailsConf 2009 What Makes Ruby Go An Implementation Primer</title>
+   <meta name="author" content="Nick Quaranto" />
+   <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" />
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div class="container_12">
+    <div id="links" class="grid_2">
+      <a href="/about.html">about</a>
+      <a href="/projects.html">projects</a>
+      <a href="http://visualcv.com/nquaranto/">resume</a>
+      <a href="/talks.html">talks</a>
+      <a href="/written.html">written</a>
+      <br />
+      <a href="mailto:nick@quaran.to">email</a>
+      <a href="http://feeds2.feedburner.com/LitanyAgainstFear">rss</a>
+      <a href="http://twitter.com/qrush">twitter</a>
+      <a href="http://qrush.tumblr.com">tumblr</a>
+      <a href="http://www.workingwithrails.com/person/14728-nick-quaranto">wwr</a>
+    </div>
+    <div id="main" class="grid_8">
+      <h1><a href="/">litany against fear</a></h1>
+      <div id="subtitle">coding with spice &curren; by nick quaranto</div>
+      <hr />
+      <div id="post">
+  <h2><a href="/blog/2009/05/06/railsconf-2009-what-makes-ruby-go-an-implementation-primer">
+    RailsConf 2009 What Makes Ruby Go An Implementation Primer
+  </a></h2>
+  <div id="date">published 06 May 2009</div>
+  <p>This is part of my series of notes on RailsConf 2009. <a href="http://litanyagainstfear.com/blog/2009/05/05/railsconf-2009-notes/">Check them all out here.</a></p>
+<p>This talk was presented by Charles Nutter and Evan Phoenix.</p>
+<p>Method Calls. What happens? Evaluate receiver and arguments, look up method named &#8216;foo&#8217; (walking up the class heirarchy), and call it. Lookup is the most expensive part. There has to be some sort of method cache because walking through the different classes is really expensive. This involves checking for a cached method and ensuring the class hasn&#8217;t changed since the cache was saved. Huge deal for performance with dynamic method invocation. 80% faster typically with a method cache.</p>
+<p>Tons of things can affect the cache: <code>def</code> / <code>undef</code>, <code>Module#define_method</code>, etc. <code>Object#extend</code> is the huge problem. Used for mixins with modules and adding methods all the time in Ruby. How does <code>extend</code> affect the cache? In 1.8/1.9 the entire cache is cleared, but with JRuby (and somewhat with Rubinius) it&#8217;s localized. Extending a module has some massive performance implications. A little increase in syntatic sugar can lead to pretty huge slowdowns. It&#8217;s still definitely useful, but it has to be used with caution or in a different manner.</p>
+<p>Constant lookup! Same deal, lots of searching through the heirarchy. Cached at lookup site, and they are globally cached across all Ruby implementations. So basically, don&#8217;t redefine constants at runtime or frequently.</p>
+<p>Options Argument: Basically passing a hash at the end of an argument. Forcing Ruby to create the hash for you, or passing no arguments at all hurts performance.</p>
+<p><code>obj.run rescue nil</code>: eating exceptions in one line. Happens for two reasons: dirty way to fix a problem at 1am, and possibly by design though extremely rare. The big problem: <code>StandardError</code> has 101 subclasses, and you probably want to know about what happened. Best thing to do: throw it into a logger.</p>
+<p><code>autoload</code>: Delay code loading until some later point. Lots of problems though&#8230;for one, it&#8217;s completely thread unsafe. Inherently broken with threads in all implementations. It doesn&#8217;t actually call <code>#require</code>, so you can&#8217;t autoload gems. Plenty of alternatives though: pretend to go single-threaded, pay the cost upfront</p>
+<p><code>super</code>: lots of different ways to use this keyword. One really strange behavior: blocks tacked onto a <code>super</code> call will be passed up implicitly to the superclass. Parens work really strangely, if you don&#8217;t specify them on <code>super</code> call it will use local variables that may have changed in lines before.</p>
+<p>To wrap up: simpler code is the better code. Think twice about the fancy features of Ruby and how it might affect your app.</p>
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/litanyagainstfear/embed.js"></script><noscript><a href="http://litanyagainstfear.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+      <hr />
+      <div id="footer">
+        <a href="http://github.com/qrush/litanyagainstfear">managed by github</a>
+        &curren;
+        <a href="http://github.com/mojombo/jekyll">generated by jekyll</a>
+        &curren;
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">licensed by creative commons</a>
+        &curren;
+        <a href="http://slicehost.com">served by slicehost</a>
+      </div>
+    </div>
+    <div id="categories" class="grid_2">
+      <a href="/code.html">code (2)</a>
+      <a href="/gaming.html">gaming (3)</a>
+      <a href="/git.html">git (9)</a>
+      <a href="/internet.html">internet (5)</a>
+      <a href="/prorubyconf.html">prorubyconf (25)</a>
+      <a href="/railsconf.html">railsconf (17)</a>
+      <a href="/ruby.html">ruby (10)</a>
+      <a href="/windows.html">windows (3)</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-2896263-1");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>

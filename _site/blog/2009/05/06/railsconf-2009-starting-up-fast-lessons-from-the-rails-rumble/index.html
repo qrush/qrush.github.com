@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>litany against fear &curren; by nick quaranto &curren; RailsConf 2009 Starting up Fast Lessons from the Rails Rumble</title>
+   <meta name="author" content="Nick Quaranto" />
+   <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" />
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div class="container_12">
+    <div id="links" class="grid_2">
+      <a href="/about.html">about</a>
+      <a href="/projects.html">projects</a>
+      <a href="http://visualcv.com/nquaranto/">resume</a>
+      <a href="/talks.html">talks</a>
+      <a href="/written.html">written</a>
+      <br />
+      <a href="mailto:nick@quaran.to">email</a>
+      <a href="http://feeds2.feedburner.com/LitanyAgainstFear">rss</a>
+      <a href="http://twitter.com/qrush">twitter</a>
+      <a href="http://qrush.tumblr.com">tumblr</a>
+      <a href="http://www.workingwithrails.com/person/14728-nick-quaranto">wwr</a>
+    </div>
+    <div id="main" class="grid_8">
+      <h1><a href="/">litany against fear</a></h1>
+      <div id="subtitle">coding with spice &curren; by nick quaranto</div>
+      <hr />
+      <div id="post">
+  <h2><a href="/blog/2009/05/06/railsconf-2009-starting-up-fast-lessons-from-the-rails-rumble">
+    RailsConf 2009 Starting up Fast Lessons from the Rails Rumble
+  </a></h2>
+  <div id="date">published 06 May 2009</div>
+  <p>This is part of my series of notes on RailsConf 2009. <a href="http://litanyagainstfear.com/blog/2009/05/05/railsconf-2009-notes/">Check them all out here.</a></p>
+<p>A panel on the Rails Rumble moderated by Nick Plante. The panelists: Joe Fiorini, Chris Saylor, James Golick, and Ben Scofield.</p>
+<p>1) How is competing in the Rumble like working on a normal web project?</p>
+<p>Ben: The goal is different&#8230;you want to <span class="caps">WIN</span>.<br />
+Joe: Not really a flexible budget or time to reconsider options. The limitations make it more feasible.<br />
+Chris: They did a lot of upfront work and simply executed it.<br />
+James: More focus on the value, since that&#8217;s all the time you have for.</p>
+<p>2) Is it possible to build a real product this way? Have you continued to develop your web apps?</p>
+<p>Chris: They definitely didn&#8217;t intend it to stick&#8230;but they got a call from someone who wanted to acquire them. After actually registering the company, they&#8217;ve built it into a decent business and are actually talking to the Food Network about possibly acquiring it.<br />
+Joe: The real challenge is physical for their team, getting together is rough.<br />
+Ben: Since he&#8217;s the only one working on his project it&#8217;s a lot harder to continue work on it.<br />
+James: Getting feedback is essential, and a 48 hour window forces you to get that as soon as possible.</p>
+<p>3) What sort of up-front planning and design work did you do?</p>
+<p>Chris: Complete wireframes, DB schema, and tasks for people to do.<br />
+Joe: None? Mostly good ideas, and that&#8217;s it.<br />
+James: Some doodling, and using Pivotal Tracker a bit.<br />
+Ben: Some research and finding inspiration for the designs online.</p>
+<p>4) How did you plan for the 80/20 rule in building web apps within a 48 hr time period?</p>
+<p>James: Need to have something ready to deploy. New ideas had to be squashed too and forced into the Tracker.<br />
+Ben: Time limits help out&#8230;do the most difficult stuff first.<br />
+Joe: Their first production deploy was on Friday at 11:30, and it&#8217;s easier once you do the first one. They used a bastardizd scrum process and tried to keep it as simple as possible.<br />
+Chris: The 80/20 rule is crap most of the time! They tried to figure out what was going to take the most time and do that first. They also had to make sure someone was reviewing code.</p>
+<p>5) What are some lessons from the Rumble you can apply to teaching someone new to Rails?</p>
+<p>James: They had at least one pair programming session going on, and that helped out immensely.<br />
+Chris: During the Rumble they taught a designer how to use <span class="caps">SVN</span>.<br />
+&#8230;and hijacked!</p>
+<p>6) Did you use automated testing?</p>
+<p>Joe: No. Sort of hard without a good background of testing and not a good place to learn.<br />
+Ben: Not good to learn completely new things, for example a World of Warcraft addon&#8230;which is written in Lua. And he used some automated testing.<br />
+James: Plenty, that&#8217;s just how they write code. Great way to catch regressions and they definitely noticed some teams that had pretty broken apps that didn&#8217;t do any testing.<br />
+Nick: Work with technologies you&#8217;re comfortable with.</p>
+<p>7) What processes/tools were the most helpful?</p>
+<p>Joe: resource_controller was awesome. Also, NewRelic <span class="caps">RPM</span> helped when their site got hit from Lifehacker. Basecamp was great for communication too. <br />
+James: Starter apps were really helpful, like bort or blank. Pivotal Tracker is super simple and gets out of your way.<br />
+Chris: Going to be interesting to see how Rails templates will be used. Campfire was awesome too, especially for the history and inline images.<br />
+Ben: Lots of testing gems: factory_girl, shoulda, mocha, etc.</p>
+<p>8) How did you find good people to work with? How similar is this to finding cofounders?</p>
+<p>Joe: Mostly coworkers and friends of them.<br />
+James: He ended up hiring his cohorts since he enjoyed working with them so much.<br />
+Chris: Local user groups are a great way to find people.<br />
+Ben: Teams are for the weak.</p>
+<p>9) What was the most rewarding part?</p>
+<p>James: A lot of great hacking and tons of fun.<br />
+Joe: Good opportunity to learn and nice to see a finished app in one weekend.<br />
+Chris: The belt.<br />
+Ben: Definitely a reminder of why this profession is awesome.</p>
+<p>Next up: August 22/23rd! <a href="http://railsrumble.com">More info here.</a></p>
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/litanyagainstfear/embed.js"></script><noscript><a href="http://litanyagainstfear.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+      <hr />
+      <div id="footer">
+        <a href="http://github.com/qrush/litanyagainstfear">managed by github</a>
+        &curren;
+        <a href="http://github.com/mojombo/jekyll">generated by jekyll</a>
+        &curren;
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">licensed by creative commons</a>
+        &curren;
+        <a href="http://slicehost.com">served by slicehost</a>
+      </div>
+    </div>
+    <div id="categories" class="grid_2">
+      <a href="/code.html">code (2)</a>
+      <a href="/gaming.html">gaming (3)</a>
+      <a href="/git.html">git (9)</a>
+      <a href="/internet.html">internet (5)</a>
+      <a href="/prorubyconf.html">prorubyconf (25)</a>
+      <a href="/railsconf.html">railsconf (17)</a>
+      <a href="/ruby.html">ruby (10)</a>
+      <a href="/windows.html">windows (3)</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-2896263-1");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>

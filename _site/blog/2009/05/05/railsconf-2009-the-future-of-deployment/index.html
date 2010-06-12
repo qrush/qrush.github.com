@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>litany against fear &curren; by nick quaranto &curren; RailsConf 2009 The Future of Deployment</title>
+   <meta name="author" content="Nick Quaranto" />
+   <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" />
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div class="container_12">
+    <div id="links" class="grid_2">
+      <a href="/about.html">about</a>
+      <a href="/projects.html">projects</a>
+      <a href="http://visualcv.com/nquaranto/">resume</a>
+      <a href="/talks.html">talks</a>
+      <a href="/written.html">written</a>
+      <br />
+      <a href="mailto:nick@quaran.to">email</a>
+      <a href="http://feeds2.feedburner.com/LitanyAgainstFear">rss</a>
+      <a href="http://twitter.com/qrush">twitter</a>
+      <a href="http://qrush.tumblr.com">tumblr</a>
+      <a href="http://www.workingwithrails.com/person/14728-nick-quaranto">wwr</a>
+    </div>
+    <div id="main" class="grid_8">
+      <h1><a href="/">litany against fear</a></h1>
+      <div id="subtitle">coding with spice &curren; by nick quaranto</div>
+      <hr />
+      <div id="post">
+  <h2><a href="/blog/2009/05/05/railsconf-2009-the-future-of-deployment">
+    RailsConf 2009 The Future of Deployment
+  </a></h2>
+  <div id="date">published 05 May 2009</div>
+  <p>This is part of my series of notes on RailsConf 2009. <a href="http://litanyagainstfear.com/blog/2009/05/05/railsconf-2009-notes/">Check them all out here.</a></p>
+<p>This panel is from the guys behind Heroku. Going through the russian doll architecture of Heroku: Thin, Rack, Rack::Cache, and Sinatra. The guys who wrote this stuff are here, and they have some interesting opinions to share.</p>
+<p>Marc-Andre Cournoyer started Thin as a port of Mongrel that was not threaded. He plugged it into EventMachine, and magic happened.</p>
+<p>Christian Neukirchen started Rack. He didn&#8217;t want to go with Rails for writing his own <span class="caps">CMS</span>, so he started it as a Mongrel plugin. He created a port of the Mongrel <span class="caps">API</span> to <span class="caps">FCGI</span>, brought it to Zed, and he pretty much shot it down. From there he started looking around and found Python&#8217;s <span class="caps">WSGI</span> and decided to start on a Ruby version of it. Now at the point where pretty much every Ruby web framework runs on Rack.</p>
+<p>Ryan Tomayko started Rack::Cache since he wanted a much simpler way to deal with <span class="caps">HTTP</span> caching, since it&#8217;s usually so complicated it&#8217;s easy to lose people when trying to explain it. He also wanted to show a great example of some Rack middleware.</p>
+<p>Blake Mizerany started Sinatra because he had some smaller apps that he didn&#8217;t need to use Rails for. He started messing around with Mongrel handlers but soon switched over to using Rack.</p>
+<p>Adam Wiggins is one of the founders of Heroku. He thinks the meaning of deployment is changing. It&#8217;s not a slow cycle that requires a lot of hardware and time, and they&#8217;re enabling people to change rapidly and allow developers to focus on writing their application code and not their servers.</p>
+<p>Discussing the terminology behind deployment. Some talk that Mongrel has become a noun, but most people seem to use just &#8220;app server&#8221;. Moving onto middleware and how it can be used. Most people seem to know about it but not actually use it. The real benefit seems to be that you can have small pieces that are easier to test and can be brought together in a simple way. Lots of discussion about queueing systems as well. Plenty of people in the audience are using them, and there also seems to be a decent chunk of people that have rolled their own system.</p>
+<p>(Note: I missed a decent chunk of this panel, the dry Vegas air finally got to me)</p>
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/litanyagainstfear/embed.js"></script><noscript><a href="http://litanyagainstfear.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+      <hr />
+      <div id="footer">
+        <a href="http://github.com/qrush/litanyagainstfear">managed by github</a>
+        &curren;
+        <a href="http://github.com/mojombo/jekyll">generated by jekyll</a>
+        &curren;
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">licensed by creative commons</a>
+        &curren;
+        <a href="http://slicehost.com">served by slicehost</a>
+      </div>
+    </div>
+    <div id="categories" class="grid_2">
+      <a href="/code.html">code (2)</a>
+      <a href="/gaming.html">gaming (3)</a>
+      <a href="/git.html">git (9)</a>
+      <a href="/internet.html">internet (5)</a>
+      <a href="/prorubyconf.html">prorubyconf (25)</a>
+      <a href="/railsconf.html">railsconf (17)</a>
+      <a href="/ruby.html">ruby (10)</a>
+      <a href="/windows.html">windows (3)</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-2896263-1");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>

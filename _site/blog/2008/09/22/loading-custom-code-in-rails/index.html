@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>litany against fear &curren; by nick quaranto &curren; Loading custom code in Rails</title>
+   <meta name="author" content="Nick Quaranto" />
+   <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" />
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div class="container_12">
+    <div id="links" class="grid_2">
+      <a href="/about.html">about</a>
+      <a href="/projects.html">projects</a>
+      <a href="http://visualcv.com/nquaranto/">resume</a>
+      <a href="/talks.html">talks</a>
+      <a href="/written.html">written</a>
+      <br />
+      <a href="mailto:nick@quaran.to">email</a>
+      <a href="http://feeds2.feedburner.com/LitanyAgainstFear">rss</a>
+      <a href="http://twitter.com/qrush">twitter</a>
+      <a href="http://qrush.tumblr.com">tumblr</a>
+      <a href="http://www.workingwithrails.com/person/14728-nick-quaranto">wwr</a>
+    </div>
+    <div id="main" class="grid_8">
+      <h1><a href="/">litany against fear</a></h1>
+      <div id="subtitle">coding with spice &curren; by nick quaranto</div>
+      <hr />
+      <div id="post">
+  <h2><a href="/blog/2008/09/22/loading-custom-code-in-rails">
+    Loading custom code in Rails
+  </a></h2>
+  <div id="date">published 22 Sep 2008</div>
+  <p>This is a question I&#8217;ve seen asked (including by myself) in #rubyonrails on Freenode quite a few times, and I figured I&#8217;d settle it once and for all. There&#8217;s a few different ways to get custom code loaded into your Rails app. The first solution to this is understanding how code gets loaded with Ruby in the first place, which I usually get confused with. Let&#8217;s do a little recap about your different options that Ruby and Rails provides:</p>
+<ul>
+	<li><strong><a href="http://www.ruby-doc.org/core/classes/Kernel.html#M005966">load</a>: </strong>Loads and executes the Ruby program in the file <em>filename</em>.</li>
+	<li><strong><a href="http://www.ruby-doc.org/core/classes/Kernel.html#M005967">require</a>: </strong>Ruby tries to load the library<em></em>, returning <tt>true</tt> if successful.</li>
+	<li><strong><a href="http://wiki.rubyonrails.org/rails/pages/RequireDependency">require_dependency</a>: </strong>Reloads source files on each request when in development mode, so changes are reflected on the next request.</li>
+	<li><strong>require_or_load: </strong>There doesn&#8217;t seem to be much documentation on this, but it doesn&#8217;t seem as safe and <a href="http://github.com/rails/rails/tree/master/activesupport/CHANGELOG#L1123">it may result in your code being loaded twice</a>. Review the code <a href="http://github.com/rails/rails/tree/master/activesupport/lib/active_support/dependencies.rb#L228-264">here</a> before you use it.</li>
+</ul>
+<p>So, the most ideal keyword to use is <strong>require_dependency</strong>, since it will reload code during development mode when you make changes. Otherwise, you&#8217;ll have to constantly restart your development server/console, and that just sucks. Plus, it&#8217;ll work perfectly in production mode and only load the files once.</p>
+<p>So, where&#8217;s the best place to put the files with your custom code? Well, there&#8217;s a few folders that are on the Rails load path in the first place: <strong>app, lib, vendor and mock</strong> <strong>paths</strong> (<a href="http://github.com/rails/rails/tree/master/railties/lib/initializer.rb#L607-609">source</a>) you need to add different folders to the load path, that&#8217;s more than possible. In your config/environment.rb, add whatever folder you want in the config.load_paths variable. For instance,</p>
+<p>Liquid error: No such file or directory &#8211; pygmentize -f html -O encoding=utf-8 -l ruby</p>
+<p>This will load the custom directory (RAILS_ROOT/custom) to the load path so you can use those files. The problem with files you put in these directories is that they may be in the load path, but you&#8217;ll have to require the custom files you want in each class that you&#8217;ll want to use them. The solution to this is to get the file required for the entire Rails environment, which is a lot easier than you&#8217;d think.</p>
+<p>Let&#8217;s say we want to load some extensions to String for your app. Being a forward thinking developer, you&#8217;ve created a new folder in lib, called core_ext, where you can put other ruby files in the future if you need to. So in lib/core_ext/string.rb you&#8217;ve dumped for example:</p>
+<p>Liquid error: No such file or directory &#8211; pygmentize -f html -O encoding=utf-8 -l ruby</p>
+<p>The folder config/initializers contains files that run once when your Rails environment is getting set up. Create a new file in that folder and this will run through your custom folder and make sure that the files are required properly.</p>
+<p>Liquid error: No such file or directory &#8211; pygmentize -f html -O encoding=utf-8 -l ruby</p>
+<p>So now, you can call <code>require_core_ext</code> in whatever class you want, and it will reload all of your custom code if you&#8217;re in development mode or if you&#8217;re in production, it will only load your custom classes when the file is first loaded. Now you can call <code>String#slugify</code> all you want, and if you make changes to the method in lib/core_ext it will be reflected when you refresh the page.</p>
+<p>If you&#8217;ve got any other examples of how you bring in custom code, let me know, as I&#8217;d love to find out.</p>
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/litanyagainstfear/embed.js"></script><noscript><a href="http://litanyagainstfear.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+      <hr />
+      <div id="footer">
+        <a href="http://github.com/qrush/litanyagainstfear">managed by github</a>
+        &curren;
+        <a href="http://github.com/mojombo/jekyll">generated by jekyll</a>
+        &curren;
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">licensed by creative commons</a>
+        &curren;
+        <a href="http://slicehost.com">served by slicehost</a>
+      </div>
+    </div>
+    <div id="categories" class="grid_2">
+      <a href="/code.html">code (2)</a>
+      <a href="/gaming.html">gaming (3)</a>
+      <a href="/git.html">git (9)</a>
+      <a href="/internet.html">internet (5)</a>
+      <a href="/prorubyconf.html">prorubyconf (25)</a>
+      <a href="/railsconf.html">railsconf (17)</a>
+      <a href="/ruby.html">ruby (10)</a>
+      <a href="/windows.html">windows (3)</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-2896263-1");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>litany against fear &curren; by nick quaranto &curren; Ruby: Fragile or Agile? Notes</title>
+   <meta name="author" content="Nick Quaranto" />
+   <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" />
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div class="container_12">
+    <div id="links" class="grid_2">
+      <a href="/about.html">about</a>
+      <a href="/projects.html">projects</a>
+      <a href="http://visualcv.com/nquaranto/">resume</a>
+      <a href="/talks.html">talks</a>
+      <a href="/written.html">written</a>
+      <br />
+      <a href="mailto:nick@quaran.to">email</a>
+      <a href="http://feeds2.feedburner.com/LitanyAgainstFear">rss</a>
+      <a href="http://twitter.com/qrush">twitter</a>
+      <a href="http://qrush.tumblr.com">tumblr</a>
+      <a href="http://www.workingwithrails.com/person/14728-nick-quaranto">wwr</a>
+    </div>
+    <div id="main" class="grid_8">
+      <h1><a href="/">litany against fear</a></h1>
+      <div id="subtitle">coding with spice &curren; by nick quaranto</div>
+      <hr />
+      <div id="post">
+  <h2><a href="/blog/2008/11/20/ruby-fragile-or-agile-notes">
+    Ruby: Fragile or Agile? Notes
+  </a></h2>
+  <div id="date">published 20 Nov 2008</div>
+  <p>Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="http://litanyagainstfear.com/blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a></p>
+<p>This talk is by Josh Susser from Pivotal Labs.</p>
+<p>Tons of wonders in the world. What the heck happened to Smalltalk though? Spawned many languages, but it was still superior. Yeah, there&#8217;s Lisp too. Why aren&#8217;t we all programming in Smalltalk? C++ mostly.</p>
+<p>Why is it a bad idea to go with C++ (At Apple!) Alan Kay said that 3 things make up OO: encapsulation, polymorphism, inheritance. For C++: <span class="caps">WEAK</span> encapsulation, <span class="caps">WEAK</span> polymorphism, <span class="caps">WTF</span> inheritance. At Xerox he programmed a smalltalk interpreter (or something) in Microcode. C++ is not a high level language. Just a thin layer on top of C, which is just portable assembly. Smalltalk had a lot of great things&#8230;<span class="caps">IDE</span>, garbage collection, and a huge blind spot.</p>
+<p>Josh likes looking at things like their greatest strength is their greatest weakness. Comparing to Superman&#8217;s strength and willingness to do good, which Lex Luthor can manipulate.</p>
+<p>&#8220;An operating system is everything that can&#8217;t fit in a language&#8221; Very meta: Most of smalltalk implemented in smalltalk. Made of a kernel, which made up the fundamental pieces of the language: primitives, datatypes, IO, fundamentals. Virtual image had everything else: compiler, graphics, network stack. VM can be ported from platform to platform, and the image runs the same.</p>
+<p>Virtual image is really cool, but it&#8217;s not without cost. Made applications almost impossible to deliver. He was one of the first at Xerox to deliver commerical Smalltalk apps. Very hard since the code was integrated with the user&#8217;s data. No concept for namespaces, so screwed if vendors use them together.</p>
+<p>So, it&#8217;s a bit of a monolith. You&#8217;re not using Linux, Windows, etc windowing system, you&#8217;re using Smalltalk&#8217;s. It&#8217;s getting old. C++ sucked up all of the oxygen and steam that Smalltalk had built up in a very short period of time.</p>
+<p>Why did that happen? C++ was not better than Smalltalk, but it was just enough better than C. Didn&#8217;t require a big conceptual leap, plenty of tools, easy to implement, tons of tools already available for C. Most important things: Could actually ship applications with C++ to customers. Just enough more productivity! Sometimes, good enough is good enough.</p>
+<p>That brings us to Ruby. It would really suck if we were all programming in the modern equivalent of C++. It&#8217;s not in immediate danger of facing Smalltalk&#8217;s demise, but it couldn&#8217;t hurt to think about ways to strengthen Ruby. Not going to fix the language, but fix the language.</p>
+<p>Rails. Most people came through it, and web development is the center of what&#8217;s being done with Ruby. However, in the long run it&#8217;s a niche&#8230;.like PostScript. The next Ruby &#8216;killer app&#8217; will be outside of the web development domain. Not sure what yet though.</p>
+<p>Proposing that the reasons why people like Ruby is also because of agile development. There&#8217;s a higher percentage of Rubyists that actually do use agile development techniques. It brought joy back to his programming experience because of that. Best thing about Rails is the test directory and how it encourages <span class="caps">TDD</span>. RubyGems too since most ship with tests. There&#8217;s a culture of agile development around Ruby and it&#8217;s essential to its future. Performance issued may be solved by Maglev, Rubinius, <span class="caps">YARV</span>, etc.</p>
+<p>The amount of metaprogramming in the language helps with the <span class="caps">TDD</span> movement. The problem is in development tools: we don&#8217;t have a good <span class="caps">IDE</span>! It&#8217;s a joy to program in it, but it makes it hell on an <span class="caps">IDE</span> to understand what&#8217;s going on with the language. Smalltalk made decisions to limit the language so good development tools could be created. Simple refactoring methods like extract method, renaming are easy in Smalltalk. Not so much in Ruby because of its dynamic nature.</p>
+<p>Going through how update_attributes works&#8230;it uses send to dynamically set attributes. It&#8217;s incredibly powerful and expressive, but it makes refactoring difficult. This may be preventing people who are working with Java and used to refactoring tools to move over. No way to fully statically analyze a Ruby program&#8230;you&#8217;d need to solve the halting problem: Run the program to see what the program does. Why don&#8217;t we just do that? Run tests to see what&#8217;s interesting about the program.</p>
+<p>Showing off a little example to see what methods have been called on what classes. Can easily hook into Ruby metaprogramming to figure it out, but the main problem with this is that it can be very slow and you need to run the whole program.</p>
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/litanyagainstfear/embed.js"></script><noscript><a href="http://litanyagainstfear.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+      <hr />
+      <div id="footer">
+        <a href="http://github.com/qrush/litanyagainstfear">managed by github</a>
+        &curren;
+        <a href="http://github.com/mojombo/jekyll">generated by jekyll</a>
+        &curren;
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">licensed by creative commons</a>
+        &curren;
+        <a href="http://slicehost.com">served by slicehost</a>
+      </div>
+    </div>
+    <div id="categories" class="grid_2">
+      <a href="/code.html">code (2)</a>
+      <a href="/gaming.html">gaming (3)</a>
+      <a href="/git.html">git (9)</a>
+      <a href="/internet.html">internet (5)</a>
+      <a href="/prorubyconf.html">prorubyconf (25)</a>
+      <a href="/railsconf.html">railsconf (17)</a>
+      <a href="/ruby.html">ruby (10)</a>
+      <a href="/windows.html">windows (3)</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-2896263-1");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>

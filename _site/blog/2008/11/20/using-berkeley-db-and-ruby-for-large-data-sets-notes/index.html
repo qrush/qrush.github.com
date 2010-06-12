@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>litany against fear &curren; by nick quaranto &curren; Using Berkeley DB and Ruby for Large Data Sets Notes</title>
+   <meta name="author" content="Nick Quaranto" />
+   <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" />
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div class="container_12">
+    <div id="links" class="grid_2">
+      <a href="/about.html">about</a>
+      <a href="/projects.html">projects</a>
+      <a href="http://visualcv.com/nquaranto/">resume</a>
+      <a href="/talks.html">talks</a>
+      <a href="/written.html">written</a>
+      <br />
+      <a href="mailto:nick@quaran.to">email</a>
+      <a href="http://feeds2.feedburner.com/LitanyAgainstFear">rss</a>
+      <a href="http://twitter.com/qrush">twitter</a>
+      <a href="http://qrush.tumblr.com">tumblr</a>
+      <a href="http://www.workingwithrails.com/person/14728-nick-quaranto">wwr</a>
+    </div>
+    <div id="main" class="grid_8">
+      <h1><a href="/">litany against fear</a></h1>
+      <div id="subtitle">coding with spice &curren; by nick quaranto</div>
+      <hr />
+      <div id="post">
+  <h2><a href="/blog/2008/11/20/using-berkeley-db-and-ruby-for-large-data-sets-notes">
+    Using Berkeley DB and Ruby for Large Data Sets Notes
+  </a></h2>
+  <div id="date">published 20 Nov 2008</div>
+  <p>Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="http://litanyagainstfear.com/blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a></p>
+<p>This is a talk by Matt Bauer from Pedal Brain.</p>
+<p>Large amount of data in their system with cycling. Tires, speed, wind, etc. 46 data points. 29 collected every 5 seconds. 1.7 <span class="caps">TRILLION</span> data points (50 GB!) with over 5000 concurrent requests. Everything from <span class="caps">GPS</span> location, power, etc. Devices are peridocially connected so data much be captured quickly and latency must be low. Realtime reporting of where cyclists are at with this system. Ability to do reports on many different levels. Typical report is 40k-220k rows.</p>
+<p>They settled with lighttpd, merb, and sleepycat software&#8217;s stuff with BerkeleyDB. It&#8217;s fantastic: open source and highly concurrent. Can scale to 256 terabytes! Fully featured DB too&#8230;<span class="caps">ACID</span>, locking, and more. What&#8217;s special: it&#8217;s embedded, written in C with many bindings. No <span class="caps">SQL</span> or schema, doesn&#8217;t operate on keys or data. Like sqlite, but way more battle tested.</p>
+<p>Two data stores. Concurrent data store: no recoverability or transaction capabilities. Transactional data store: fully recoverable and complete <span class="caps">ACID</span> feature set. So it&#8217;s very powerful&#8230;but is it good through Ruby? <span class="caps">YES</span>! Showing off quite a few tests about how blazingly fast it is. No marshalling data over the wire or through a socket so it&#8217;s very fast.</p>
+<p>Very difficult to handle though. All sorts of special constraints that can be customizable. Two bindings that let Ruby talk to Berkeley. Guy Decoux wrote the original, which is pretty slow and built for a much older Ruby version. The newer once with Dan Janowski is an exact implementation of the C <span class="caps">API</span>, quite stable. Only three test cases though.</p>
+<p>Guy&#8217;s bindings let you feel like the data is literally an object in Ruby. Dan&#8217;s way is a lot like C. A bit messy and uses bit flags, but it&#8217;s a direct translation from C anyway. There&#8217;s only one table with BerkeleyDB, but different types of access:<br />
+<ul><br />
+	<li>BTree: sorted, balanced tree. Ordered insertion results in full pages.</li><br />
+	<li>Hash: extended linear hashing</li><br />
+	<li>Queue: fixed length records</li><br />
+	<li>Recno: stable record numbers</li></p>
+</ul>
+<p>Variable length key and data means 4 gigs of data. Damn. Transactions and cursors are in there too and can be done completely through Ruby code. Indexes are in too, but requires two separate database connections.</p>
+<p>The future: combine the Ruby feel of Guy&#8217;s code with Dan&#8217;s C codebase, improve tests, more marshaling options. Support for newer version of the DB and moving to GitHub soon.</p>
+<p>Databasess != <span class="caps">SQL</span> or Entity/Relationship. Just be happy and use Ruby! Use the right tool for the job too, if it&#8217;s BerkeleyDB, sqlite, MySQL, or whatever.</p>
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/litanyagainstfear/embed.js"></script><noscript><a href="http://litanyagainstfear.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+      <hr />
+      <div id="footer">
+        <a href="http://github.com/qrush/litanyagainstfear">managed by github</a>
+        &curren;
+        <a href="http://github.com/mojombo/jekyll">generated by jekyll</a>
+        &curren;
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">licensed by creative commons</a>
+        &curren;
+        <a href="http://slicehost.com">served by slicehost</a>
+      </div>
+    </div>
+    <div id="categories" class="grid_2">
+      <a href="/code.html">code (2)</a>
+      <a href="/gaming.html">gaming (3)</a>
+      <a href="/git.html">git (9)</a>
+      <a href="/internet.html">internet (5)</a>
+      <a href="/prorubyconf.html">prorubyconf (25)</a>
+      <a href="/railsconf.html">railsconf (17)</a>
+      <a href="/ruby.html">ruby (10)</a>
+      <a href="/windows.html">windows (3)</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-2896263-1");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>

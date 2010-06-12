@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>litany against fear &curren; by nick quaranto &curren; RailsConf 2009 DHH Keynote</title>
+   <meta name="author" content="Nick Quaranto" />
+   <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" />
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div class="container_12">
+    <div id="links" class="grid_2">
+      <a href="/about.html">about</a>
+      <a href="/projects.html">projects</a>
+      <a href="http://visualcv.com/nquaranto/">resume</a>
+      <a href="/talks.html">talks</a>
+      <a href="/written.html">written</a>
+      <br />
+      <a href="mailto:nick@quaran.to">email</a>
+      <a href="http://feeds2.feedburner.com/LitanyAgainstFear">rss</a>
+      <a href="http://twitter.com/qrush">twitter</a>
+      <a href="http://qrush.tumblr.com">tumblr</a>
+      <a href="http://www.workingwithrails.com/person/14728-nick-quaranto">wwr</a>
+    </div>
+    <div id="main" class="grid_8">
+      <h1><a href="/">litany against fear</a></h1>
+      <div id="subtitle">coding with spice &curren; by nick quaranto</div>
+      <hr />
+      <div id="post">
+  <h2><a href="/blog/2009/05/05/railsconf-2009-dhh-keynote">
+    RailsConf 2009 DHH Keynote
+  </a></h2>
+  <div id="date">published 05 May 2009</div>
+  <p>This is part of my series of notes on RailsConf 2009. <a href="http://litanyagainstfear.com/blog/2009/05/05/railsconf-2009-notes/">Check them all out here.</a></p>
+<p>Rails 3! This year marks the fifth year of working with Rails (six really for him). We&#8217;re largely doing the same things from 5 years ago. Stop fretting so much if you&#8217;re up to date with the most up to date practices. It&#8217;s possible to enjoy Rails without knowing everything new that&#8217;s going on, and definitely not necessary to rewrite apps as a whole that are using the &#8216;old&#8217; practicies.</p>
+<p>We were supposed to be killed a long time ago. Going through some memories of why Rails isn&#8217;t supposed to make it. First off: it wasn&#8217;t &#8216;enterprise-ready&#8217;. There was this notion that it was a group of consultants more interested in getting more billable hours and selling their books. This is obviously not the case. It takes time for these arguments to settle.</p>
+<p>The next step was copying Rails: Grails, Sails, Monorail, etc. By bringing a few parts that makes Rails awesome into a different language, it can help to make that language not suck. Well, maybe not. If you can boil down what makes Rails coders more efficient, then you don&#8217;t need to learn about Ruby or Rails.</p>
+<p>Switching back to old systems: the first big one was &#8216;7 Reasons I Switched back ot <span class="caps">PHP</span> after 2 years on Rails&#8217;. For some reason since Rails didn&#8217;t meet his needs, people saw it as a reason to ignore Rails. News sites like Slashdot and Reddit seem to intensify the arguments behind these posts, but it only lasts for a really short amount of time.</p>
+<p>The failwhale! The core argument behind this: Rails doesn&#8217;t scale. It&#8217;s hard to fight a meme like this, and it&#8217;s better just to accept them. Rails has the both good and the bad with this situation, and it doesn&#8217;t really matter in the long run.</p>
+<p>One of the big &#8216;storms&#8217; was the <code>Array#second</code> and so on methods, which only lasted for a few days like the other ones. Merb was one of these too, but it&#8217;s stuck around. The arguments at face value may seem very heated, but once you dive in, people are trying to solve the same problems.</p>
+<p>Chill out. We&#8217;re still here despite all of what&#8217;s been going on and it&#8217;s not going anywhere.</p>
+<p>The Philosophy of Rails 3:</p>
+<ul>
+	<li>Lock up the unicorns: Not going to solve all of the problems or be a huge rewrite.</li>
+	<li>No holy cows: Question what&#8217;s going on, get away from things that can&#8217;t or shouldn&#8217;t be changed. Huge example: <code>alias_method_chain</code>. Nothing is sacred in Rails. Definitely up for improvements that break existing Rails apps, if the arguments are good.</li>
+	<li>Have it your way: the real merge! It allows you to choose whatever you want, there&#8217;s an accepted way to do things, but you can modify it as you want. Keeping people in the community because of this is most important.</li>
+</ul>
+<p>The progress of Rails 3:</p>
+<p>No new gems or huge release today. Going over some nice parts of Rails 3 that&#8217;s already in the repo.</p>
+<ul>
+	<li>New router: Rewriting it again. Routing based on subdomains and user agents as well. Bake Rack into the router so you can mount multiple Rack apps at the same time. Going through some new ways that the router could be designed, both for old style declarations and new <span class="caps">REST</span> routing.</li>
+	<li><span class="caps">XSS</span> protection: For a long time, it&#8217;s been a holy cow and left to the developers to determine when to use the <code>h</code> function to escape <span class="caps">HTML</span>. Flipping the convention: all default views will be escaped. You have to use the <code>raw</code> helper to unescape. Mark a string as being safe <span class="caps">HTML</span> with <code>String#html_safe!</code>. Thiswill probably cause the most pain for upgrades.</li>
+	<li>JavaScript: Unobstrusive means that no javascript in your <span class="caps">HTML</span>. Rails needs to do this too, but it&#8217;s skipped over this for a long time. Rails is going to adopt HTML5 standards of custom attributes in order to get around this. Showing an example of <code>data-remote: true</code> for <code>link_to_remote</code>, <code>data-method: delete</code> for <code>link_to :method =&gt; :delete, :confirm =&gt; true</code>.</li>
+	<li>Lots of more agnosticism: ActionORM, more flexible generators.</li>
+	<li>The great refactoring: Lots of ideas from Merb being brought over. AbstractController + ActionDispatch for making the controllers better and cleaner. ActionRelation will help out with some of the relational math going on under the hood of ActiveRecord.</li>
+</ul>
+<p>DHH&#8217;s secret to productivity: renegotiating requirements. Most programmers don&#8217;t seem to be able to do this and push back. The real lesson here seems to be reflecting on what the customers really need, and trying not to sink tons of time into fruitless efforts. We want to be the hero and do everything the client wants. This is bad, obviously. You need to balance motivation along with what the clients want. The definition of programmer is bad: consider them partners instead.</p>
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/litanyagainstfear/embed.js"></script><noscript><a href="http://litanyagainstfear.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+      <hr />
+      <div id="footer">
+        <a href="http://github.com/qrush/litanyagainstfear">managed by github</a>
+        &curren;
+        <a href="http://github.com/mojombo/jekyll">generated by jekyll</a>
+        &curren;
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">licensed by creative commons</a>
+        &curren;
+        <a href="http://slicehost.com">served by slicehost</a>
+      </div>
+    </div>
+    <div id="categories" class="grid_2">
+      <a href="/code.html">code (2)</a>
+      <a href="/gaming.html">gaming (3)</a>
+      <a href="/git.html">git (9)</a>
+      <a href="/internet.html">internet (5)</a>
+      <a href="/prorubyconf.html">prorubyconf (25)</a>
+      <a href="/railsconf.html">railsconf (17)</a>
+      <a href="/ruby.html">ruby (10)</a>
+      <a href="/windows.html">windows (3)</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-2896263-1");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>litany against fear &curren; by nick quaranto &curren; On Gem Forking</title>
+   <meta name="author" content="Nick Quaranto" />
+   <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" />
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div class="container_12">
+    <div id="links" class="grid_2">
+      <a href="/about.html">about</a>
+      <a href="/projects.html">projects</a>
+      <a href="http://visualcv.com/nquaranto/">resume</a>
+      <a href="/talks.html">talks</a>
+      <a href="/written.html">written</a>
+      <br />
+      <a href="mailto:nick@quaran.to">email</a>
+      <a href="http://feeds2.feedburner.com/LitanyAgainstFear">rss</a>
+      <a href="http://twitter.com/qrush">twitter</a>
+      <a href="http://qrush.tumblr.com">tumblr</a>
+      <a href="http://www.workingwithrails.com/person/14728-nick-quaranto">wwr</a>
+    </div>
+    <div id="main" class="grid_8">
+      <h1><a href="/">litany against fear</a></h1>
+      <div id="subtitle">coding with spice &curren; by nick quaranto</div>
+      <hr />
+      <div id="post">
+  <h2><a href="/blog/2009/10/09/on-gem-forking">
+    On Gem Forking
+  </a></h2>
+  <div id="date">published 09 Oct 2009</div>
+  <p style="text-align:center;"><img src="http://cloud.github.com/downloads/qrush/litanyagainstfear/fork2.JPG" alt="" /></p>
+<p>So, <a href="http://github.com/blog/515-gem-building-is-defunct">GitHub has recommended Gemcutter</a> as an alternative to hosting gems on GitHub. Of course, there seems to be an outcry, for three main reasons that I can see:</p>
+<p>1) Effort must be made to move documentation and install instructions<br />
+2) Gem forking is not possible with the new site<br />
+3) GitHub gave no warning on this</p>
+<p>As for #1, you&#8217;ve got a year to update your user base and get gems off GitHub. I&#8217;d assume that any actively maintained project has figured Gemcutter out by then. And for #3, at least we&#8217;ve got a new service that works and can meet the same needs.</p>
+<p>Regarding RubyGem forking, I&#8217;d like to state that this statement is <strong>false</strong>. Gemcutter accepts built gems, so you simply need to mimic the actions that GitHub&#8217;s gem builder did: Open your .gemspec up, append your username to the gem name, and save. <code>gem build</code>, <code>gem push</code>, and done.</p>
+<p>I think an important distinction must be made here: <strong>gem forking != scm forking</strong>. GitHub made it easy for anyone to automatically push modifications to gems, but there&#8217;s a bigger picture to think of here. Hopefully at some point, the changes you made will be brought back into the mainline gem. As <a href="http://daviddollar.org/">David Dollar</a> so eloquently puts it:</p>
+<blockquote>
+<p>I think the general idea is that gem forks should be a huge special case. I&#8217;m somewhat of the mind personally that making gem forks too &#8216;easy&#8217; causes a great deal of unnecessary fragmentation in the community. It seems reasonable to me, that if your project is going to depend on a gem fork, that the dependency resolution not be automatic, and your installation instructions can tell the user how to get the forked dependency.</p>
+<p>If a fork is going to be long-term, or a true alternative, it should probably be reregistered under a new name as a different project.</p>
+</blockquote>
+<p>Like I stated above, &#8216;gem forking&#8217; is still supported just because of the nature of how Gemcutter works. I felt there needed to be a longer term solution for this in general, since now the community has grown used to it. This <a href="http://wiki.github.com/qrush/gemcutter/fork-support">lively discussion</a> ensued, and after some deliberation we&#8217;re going to use subdomains in order to solve the problem.</p>
+<p>The idea is this: you&#8217;ll be able to register your own subdomain on gemcutter.org, such as <code>qrush.gemcutter.org</code>, and we&#8217;ll give you a completely blank index to push to. Hopefully you&#8217;ll be able to add others like the <a href="http://gemcutter.org/pages/gem_docs#owner">gem owner</a> system works now. I feel this feature needs to be used in the following ways:</p>
+<p>1) Subdomain use should be infrequent. It&#8217;s for trial/forked gems that shouldn&#8217;t be relied on for production.<br />
+2) Use prerelease versions for development snapshots (version numbers like 1.0.0pre, <code>gem install yourgem --prerelease</code>)<br />
+3) Don&#8217;t add someone&#8217;s subdomain as a source, unless you can completely trust anything they toss there. (like, your own for example)<br />
+4) Consider gemcutter.org/rubygems.org as the main, canonical repo that you can trust.<br />
+5) Start looking into <a href="http://blog.segment7.net/articles/2009/02/04/a-rubygems-github-proposal">gem signing/cert</a> since it&#8217;s <strong>the</strong> way we can really trust gems</p>
+<p>Of course, none of this subdomains stuff works yet, but it seems like the best way forward. It&#8217;s also spawning new, awesome ideas like <a href="http://github.com/qrush/gemcutter/issues#issue/91">password protected, private subdomains</a>. If you&#8217;re interested in contributing to the project, please <a href="http://github.com/qrush/gemcutter">fork away</a> or hop in #gemcutter on Freenode to see what&#8217;s happening.</p>
+<p>This is <strong>our</strong> gem host now, let&#8217;s make it awesome.</p>
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/litanyagainstfear/embed.js"></script><noscript><a href="http://litanyagainstfear.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+      <hr />
+      <div id="footer">
+        <a href="http://github.com/qrush/litanyagainstfear">managed by github</a>
+        &curren;
+        <a href="http://github.com/mojombo/jekyll">generated by jekyll</a>
+        &curren;
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">licensed by creative commons</a>
+        &curren;
+        <a href="http://slicehost.com">served by slicehost</a>
+      </div>
+    </div>
+    <div id="categories" class="grid_2">
+      <a href="/code.html">code (2)</a>
+      <a href="/gaming.html">gaming (3)</a>
+      <a href="/git.html">git (9)</a>
+      <a href="/internet.html">internet (5)</a>
+      <a href="/prorubyconf.html">prorubyconf (25)</a>
+      <a href="/railsconf.html">railsconf (17)</a>
+      <a href="/ruby.html">ruby (10)</a>
+      <a href="/windows.html">windows (3)</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-2896263-1");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>litany against fear &curren; by nick quaranto &curren; Testing as Communication: Real-World Techniques Notes</title>
+   <meta name="author" content="Nick Quaranto" />
+   <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" />
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+  <div class="container_12">
+    <div id="links" class="grid_2">
+      <a href="/about.html">about</a>
+      <a href="/projects.html">projects</a>
+      <a href="http://visualcv.com/nquaranto/">resume</a>
+      <a href="/talks.html">talks</a>
+      <a href="/written.html">written</a>
+      <br />
+      <a href="mailto:nick@quaran.to">email</a>
+      <a href="http://feeds2.feedburner.com/LitanyAgainstFear">rss</a>
+      <a href="http://twitter.com/qrush">twitter</a>
+      <a href="http://qrush.tumblr.com">tumblr</a>
+      <a href="http://www.workingwithrails.com/person/14728-nick-quaranto">wwr</a>
+    </div>
+    <div id="main" class="grid_8">
+      <h1><a href="/">litany against fear</a></h1>
+      <div id="subtitle">coding with spice &curren; by nick quaranto</div>
+      <hr />
+      <div id="post">
+  <h2><a href="/blog/2008/11/19/testing-as-communication-real-world-techniques-notes">
+    Testing as Communication: Real-World Techniques Notes
+  </a></h2>
+  <div id="date">published 19 Nov 2008</div>
+  <p>Part of my series of notes from the <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a>. <a href="http://litanyagainstfear.com/blog/2008/11/18/professional-ruby-conference-notes/">See them all here.</a></p>
+<p>This talk is from Jon Larkowski from Hashrocket.</p>
+<p>Subset of Obie&#8217;s The Hashrocket Way talk. No mismatch between what the customer says and what the tests give. Hashrocket values agility &amp; transparency. Communicate all the f***ing time, but only if the overhead is low. Two lines of communication:</p>
+<ul>
+	<li>Client to developer</li>
+	<li>Developer to developer</li>
+</ul>
+<p>Tools they use:</p>
+<p>Pivotal Tracker: Awesome tool. They don&#8217;t write a line of code unless if a story in the application supports. Seriously, just check out http://pivotaltracker.com Tells you when features will be done with velocity. Again, just go to the site. This helps them out with communication because it lets them know who&#8217;s working on what. Also a huge scheduling tool. Helps developers talk to developers with estimation efforts.</p>
+<p>Stories: All work is driven on stories. Only code what&#8217;s on the card. Stories are tokens of a conversation. Writing stories at a developer level where they can start implementing it is important. They used to use index cards but now they just use the Tracker. They slowly train customers to write their own stories. Standard forms:</p>
+<ul>
+	<li>As a / I want to / So That</li>
+	<li>Given / When / Then</li>
+</ul>
+<p>They want to understand development efforts in a larger context, so this helps out to see the bigger picture.</p>
+<p>Pair programming: Keeps developers honest, focused, and leads to higher quality code. There&#8217;s two wheels on the axle since there&#8217;s more than one person that knows the code. Laptops on either side of the computer. Ping Pong: one dev writes a failing test, other writes code to pass the test, rinse and repeat. Daily standups for the entire company.</p>
+<p>Testing: Express client stories as tests with Cucumber and normal <span class="caps">MVC</span> tests. RSpec specdoc format creates documentation. Durable system specification since it&#8217;s in English. Tons of techniques used: RSpec, <span class="caps">MVC</span>, Factory Girl, Cucumber, Selenium, RSpactor (instead of autotest), Continuous Integration (CruiseControl), even clicking on stuff too.</p>
+<p>Delivery: All the f**cking time. Delivered multiple times a day! Very tight feedback loop with client. Smoke test together to demo features. Deployment with Capistrano to EY or EC2. Some Passenger use.</p>
+<p>Client Acceptance: Developer-assisted! Hold their hands for a while. Video chats, use the Tracker (automatic updates too). Daily standup with client to touch base.</p>
+<p>Impedance Matching: Clients, developers, testers&#8230;all speak different language. The goal is maximum power transfer! Need to be able to talk to clients in their language, and not in geek speak. Bridging that gap requires a geek-to-english filter. Code however is a different answer. Getting the code to a geek speak standard is easy with regular code and <span class="caps">MVC</span> tests. With integration tests, it can bring that up to a level where both developers and clients can understand it: <span class="caps">ENGLISH</span>.</p>
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/litanyagainstfear/embed.js"></script><noscript><a href="http://litanyagainstfear.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+      <hr />
+      <div id="footer">
+        <a href="http://github.com/qrush/litanyagainstfear">managed by github</a>
+        &curren;
+        <a href="http://github.com/mojombo/jekyll">generated by jekyll</a>
+        &curren;
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">licensed by creative commons</a>
+        &curren;
+        <a href="http://slicehost.com">served by slicehost</a>
+      </div>
+    </div>
+    <div id="categories" class="grid_2">
+      <a href="/code.html">code (2)</a>
+      <a href="/gaming.html">gaming (3)</a>
+      <a href="/git.html">git (9)</a>
+      <a href="/internet.html">internet (5)</a>
+      <a href="/prorubyconf.html">prorubyconf (25)</a>
+      <a href="/railsconf.html">railsconf (17)</a>
+      <a href="/ruby.html">ruby (10)</a>
+      <a href="/windows.html">windows (3)</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-2896263-1");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>
