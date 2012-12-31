@@ -3,7 +3,7 @@ layout: new
 title: Thanks, 2012
 ---
 
-Thanks to my wife, Amanda, for being awesome, learning [how to program](https://github.com/aquaranto), standing up [to speak](http://magic-ruby.com/). We've been through a lot this year and you've made it all worth it. I love you.
+Thanks to my wife, Amanda, for being awesome, learning [how to program](https://github.com/aquaranto), and standing up [to speak](http://magic-ruby.com/). We've been through a lot this year and you've made it all worth it. I love you.
 
 Thanks to my parents and grandparents, who now we can live close enough to see again on a regular basis. Yes, I'll try to clean out my old room in 2013. Thanks to my brother for letting me win at least one Super Smash Bros game this year.
 
