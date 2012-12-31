@@ -1,0 +1,22 @@
+/*
+Errno::EISDIR: Is a directory - assets
+
+Backtrace:
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.4/lib/sass/engine.rb:223:in `read'
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.4/lib/sass/engine.rb:223:in `for_file'
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.4/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.4/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.4/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.4/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.4/lib/sass/plugin/compiler.rb:299:in `block in watch'
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/listen-0.4.7/lib/listen/multi_listener.rb:86:in `call'
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/listen-0.4.7/lib/listen/multi_listener.rb:86:in `on_change'
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/listen-0.4.7/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/listen-0.4.7/lib/listen/adapter.rb:162:in `call'
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/listen-0.4.7/lib/listen/adapter.rb:162:in `poll_changed_dirs'
+/Users/qrush/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/listen-0.4.7/lib/listen/adapters/darwin.rb:28:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::EISDIR: Is a directory - assets"; }

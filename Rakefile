@@ -1,28 +1,24 @@
-desc "deploy site to litanyagainstfear.com"
-task :deploy do
-  require 'rubygems'
-  require 'highline/import'
-  require 'net/ssh'
+desc "compile and run the site"
+task :default do
+  pids = [
+    spawn("jekyll"),
+    spawn("scss --watch assets:css"),
+    spawn("coffee -b -w -o javascripts -c assets/*.coffee")
+  ]
 
-  branch = "master"
+  trap "INT" do
+    Process.kill "INT", *pids
+    exit 1
+  end
 
-  username = ask("Username:  ") { |q| q.echo = true }
-  password = ask("Password:  ") { |q| q.echo = "*" }
+  loop do
+    sleep 1
+  end
+end
 
-  Net::SSH.start('litanyagainstfear.com', username, :port => 1337, :password => password) do |ssh|
-    commands = <<EOF
-cd ~/litanyagainstfear/cached-copy
-git checkout #{branch}
-git pull origin #{branch}
-git checkout -f
-rm -rf _site
-jekyll --no-auto
-mv _site ../_#{branch}
-mv ../#{branch} _old
-mv ../_#{branch} ../#{branch}
-rm -rf _old
-EOF
-    commands = commands.gsub(/\n/, "; ")
-    ssh.exec commands
+task :rename do
+  (1..11).each do |n|
+    sh "mv photos/#{n}.jpg photos/#{n}_thumb.jpg"
+    sh "mv photos/'#{n} copy.jpg' photos/#{n}.jpg"
   end
 end

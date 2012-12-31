@@ -1,0 +1,56 @@
+$width: 600px;
+
+body {
+  min-width: $width;
+  background: #2A8FBD;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+#content {
+  width: $width;
+  margin: 0 auto;
+
+  h1 {
+    margin-top: 30px;
+    font-weight: 800;
+    font-size: 90px;
+    border-bottom: 5px solid #fff;
+    padding-bottom: 20px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 300;
+    letter-spacing: 36px;
+  }
+
+  a, a:visited {
+    color: #fff;
+  }
+
+  p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
+
+  footer {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
