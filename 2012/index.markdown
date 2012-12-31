@@ -19,7 +19,7 @@ Thanks to the tech community here in Buffalo, from [meeting for coffee](http://g
 
 ## — — —
 
-Thanks to Jason, David, and all of my coworkers at 37signals. I've learned an immense amount in the past year from everyone about how to make products that we are proud of. Thanks for answering my questions, being patient, taking time out of your day to help me solve problems.
+Thanks to Jason, David, and all of my coworkers at 37signals. I've learned an immense amount in the past year from everyone about how to make products that we are proud of. Thanks for answering my questions, being patient, and taking time out of your day to help me out.
 
 Thanks to those who toil away at open source products thanklessly and tirelessly. Your work does not go unnoticed. Thanks to those who work hard behind the scenes to make the impossible possible for thousands of open source consumers. There needs to be more of you.
 
