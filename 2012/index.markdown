@@ -7,7 +7,7 @@ Thanks to my wife, Amanda, for being awesome, learning [how to program](https://
 
 Thanks to my parents and grandparents, who now we can live close enough to see again on a regular basis. Yes, I'll try to clean out my old room in 2013. Thanks to my brother for letting me win at least one Super Smash Bros game this year.
 
-Thanks to my mother-in-law, and my brother and sisters-in-law for putting up with years of me being tangled to my computer and for playing along when I teach them new games.
+Thanks to my mother-in-law, and my brother and sisters-in-law for putting up with years of me being tangled to my computer and for always being welcoming into your family.
 
 ## — — —
 
