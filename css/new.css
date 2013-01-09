@@ -28,6 +28,17 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 40px; }
+  #content ul {
+    list-style: inside disc; }
+    #content ul li {
+      padding-top: 5px;
+      padding-bottom: 5px; }
+  #content blockquote {
+    margin: 40px; }
+    #content blockquote p {
+      font-style: italic;
+      font-size: 40px;
+      line-height: 44px; }
   #content footer {
     font-size: 16px;
     font-style: italic;
@@ -36,3 +47,13 @@ body {
     margin-bottom: 30px; }
     #content footer a {
       text-decoration: none; }
+
+.gist {
+  font-size: 60%; }
+  .gist a, .gist a:visited {
+    color: black !important; }
+
+#without-plugins {
+  background: #E45635; }
+  #without-plugins h1 {
+    font-size: 70px; }

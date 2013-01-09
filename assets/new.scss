@@ -42,6 +42,24 @@ body {
     line-height: 40px;
   }
 
+  ul {
+    list-style: inside disc;
+
+    li {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+
+  blockquote {
+    margin: 40px;
+    p {
+      font-style: italic;
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+
   footer {
     font-size: 16px;
     font-style: italic;
@@ -52,5 +70,21 @@ body {
     a {
       text-decoration: none;
     }
+  }
+}
+
+.gist {
+  font-size: 60%;
+
+  a, a:visited {
+    color: #000 !important;
+  }
+}
+
+#without-plugins {
+  background: #E45635;
+
+  h1 {
+    font-size: 70px;
   }
 }
