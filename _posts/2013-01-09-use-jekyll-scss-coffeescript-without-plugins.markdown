@@ -8,9 +8,9 @@ I've been using Jekyll for [almost 4 years now](https://github.com/mojombo/jekyl
 
 > If I need more than what Jekyll provides by default, I don't use Jekyll.
 
-I'm super happy that people can build on top of Jekyll's "core". Projects like [Octopress](http://octopress.org/), and stories like [Obama raising $250M](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/) with Jekyll are awesome for the community. However, if I need something more complex than simply "posts" and "pages" for a static site, I'm not going to try to shoehorn Jekyll into a solution.
+I'm super happy that people can build on top of Jekyll's "core". Projects like [Octopress](http://octopress.org/) and stories like [Obama raising $250M](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/) with Jekyll are awesome for the community. However, if I need something more complex than simply "posts" and "pages" for a static site, I'm not going to try to shoehorn Jekyll into a solution.
 
-If you want to use Coffeescript or SCSS with Jekyll, you don't need to modify Jekyll to get this done. You can just use gems, and rake. My sites use an "assets" directory, which contain all of the .scss and .coffee files, and then some simple Ruby process spawning generates the assets. Here's a gist so you can use it too:
+If you want to use CoffeeScript or SCSS with Jekyll, you don't need to modify Jekyll to get this done. You can just use gems, and rake. My sites use an "assets" directory, which contain all of the .scss and .coffee files, and then some simple Ruby process spawning generates the assets. Here's a gist so you can use it too:
 
 <script src="https://gist.github.com/4496420.js">
 </script>
