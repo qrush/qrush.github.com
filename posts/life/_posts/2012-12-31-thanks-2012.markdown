@@ -1,6 +1,8 @@
 ---
 layout: new
 title: Thanks, 2012
+category: life
+permalink: /2012
 ---
 
 Thanks to my wife, Amanda, for being awesome, learning [how to program](https://github.com/aquaranto), and standing up [to speak](http://magic-ruby.com/). We've been through a lot this year and you've made it all worth it. I love you.
