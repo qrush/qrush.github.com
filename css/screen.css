@@ -203,3 +203,7 @@ ul { list-style-type: square; }
 .post-37signals a {
   color: #33454E;
 }
+
+.post-thoughtbot a {
+  color: #8A4860;
+}
