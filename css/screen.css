@@ -18,7 +18,7 @@ body {
   background-image: url(../images/pattern.png);
 }
 
-a:link, a:visited {
+a, a:visited {
   color: #7a2a14;
   font-weight: bold;
   text-decoration: none;
@@ -27,7 +27,6 @@ a:link, a:visited {
 a:hover {
   text-decoration: underline;
 }
-
 
 pre, code {
   -x-system-font:none;
@@ -201,3 +200,6 @@ ul { list-style-type: square; }
   font-weight: normal;
 }
 
+.post-37signals a {
+  color: #33454E;
+}
