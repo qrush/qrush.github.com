@@ -32,6 +32,10 @@ body {
     letter-spacing: 36px;
   }
 
+  h3 {
+    margin-top: 20px;
+  }
+
   a, a:visited {
     color: #fff;
   }
@@ -42,13 +46,18 @@ body {
     line-height: 40px;
   }
 
-  ul {
-    list-style: inside disc;
+  li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 35px;
+  }
 
-    li {
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
+  ol {
+    list-style: decimal;
+  }
+
+  ul {
+    list-style: disc;
   }
 
   blockquote {
@@ -87,4 +96,17 @@ body {
   h1 {
     font-size: 70px;
   }
+}
+
+#sync-iphones {
+  background: #26A459;
+}
+
+.twitter-tweet {
+  margin: 0 auto !important;
+}
+
+.center {
+  margin: 0 auto;
+  display: block;
 }

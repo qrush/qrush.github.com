@@ -22,17 +22,22 @@ body {
     font-size: 70px;
     font-weight: 300;
     letter-spacing: 36px; }
+  #content h3 {
+    margin-top: 20px; }
   #content a, #content a:visited {
     color: #fff; }
   #content p {
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 40px; }
+  #content li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 35px; }
+  #content ol {
+    list-style: decimal; }
   #content ul {
-    list-style: inside disc; }
-    #content ul li {
-      padding-top: 5px;
-      padding-bottom: 5px; }
+    list-style: disc; }
   #content blockquote {
     margin: 40px; }
     #content blockquote p {
@@ -57,3 +62,13 @@ body {
   background: #E45635; }
   #without-plugins h1 {
     font-size: 70px; }
+
+#sync-iphones {
+  background: #26A459; }
+
+.twitter-tweet {
+  margin: 0 auto !important; }
+
+.center {
+  margin: 0 auto;
+  display: block; }
