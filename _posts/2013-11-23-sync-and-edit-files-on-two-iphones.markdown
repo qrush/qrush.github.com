@@ -12,7 +12,7 @@ Need to sync a file between two iPhones and edit it on both? Here's what you nee
 It's a little tricky to get going once installed, so here's what I did:
 
 1. [Share a folder](https://www.dropbox.com/help/19/en) between both accounts. Don't share an individual file.
-2. When connecting dropbox, choose _Link to Entire Dropbox_.
+2. When linking your Dropbox account, choose _Link to Entire Dropbox_.
 3. Create a file in the shared folder, and edit away!
 
 That should really be it. Your file should now be synced on each phone after you edit it, and you won't lose it since it's in Dropbox! Here's a screenshot of PlainText in action:
