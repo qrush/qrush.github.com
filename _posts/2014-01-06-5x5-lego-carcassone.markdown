@@ -31,6 +31,6 @@ If you generated a set of all 72 tiles, it clocks in at 975 pieces. Toss in 40 [
 
 [<img class="center" src="/images/Carcassone_Full.png" width="100%" />](/images/Carcassone_Full.png)
 
-LDD even generates instructions for you, too! [Read the play-by-play](http://quaran.to/lego-carcassonne) of building this set (once GitHub Pages processes it), and check out the models for yourself [on GitHub](https://github.com/qrush/lego-carcassonne). I'd love to play a game on one of these someday.
+LDD even generates instructions for you, too! [Read the play-by-play](http://quaran.to/lego-carcassonne) of building this set, and check out the models for yourself [on GitHub](https://github.com/qrush/lego-carcassonne). I'd love to play a game on one of these someday.
 
 So, how could that happen? [Cuusoo](http://lego.cuusoo.com)? Kickstarter? Hunting down the pieces individually via [Bricklink](http://www.bricklink.com/) feels like a huge hassle. Also, the colors chosen are all not available, so it might be impossible to order this in the current color palette. If you have suggestions, let me know [on Twitter](http://twitter.com/qrush)!
