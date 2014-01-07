@@ -19,7 +19,7 @@ I borrowed a few design elements from other sets:
 * "Layered" effect like the 7x7 set
 * Fantastic color choices from the 9x9 set
 * Shrunk shield from 7x7 set down
-* Just one blue base, so [The River](http://boardgamegeek.com/boardgame/18836/carcassonne-the-river-ii) could be added later
+* One blue base, so [The River](http://boardgamegeek.com/boardgame/18836/carcassonne-the-river-ii) could be added later
 
 I connected the tiles together and it looks like a real game would not only work, but it definitely gives the "map" feel that Carcassone is great at:
 
