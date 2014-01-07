@@ -6,7 +6,7 @@ tags: lego
 
 I came across [this post](http://www.iamcal.com/lego-carcassonne/) on making a [Carcassone](http://boardgamegeek.com/boardgame/822/carcassonne) tile set out of Lego bricks yesterday. The post talks about how the individual tiles were designed and rendered, and ends with a sad conclusion: a real set would cost over $2,000. To make matters worse, the [Lego Digital Designer (LDD)](http://ldd.lego.com/en-us/)'s [DESIGN byME](http://ldd.lego.com/en-us/subpages/designbyme) site has been out of commission for a while now.
 
-The post was updated with a 7x7 tileset, and I thought it could go even smaller, which would result in a more realistic price. I fired up the LDD, and several hours later...
+The post was updated with a 7x7 tileset, and I thought it could go even smaller, which would result in a more realistic price. I fired up the LDD, and several hours later:
 
 [<img class="center" src="/images/Carcassone_Tiles2.png" width="100%" />](/images/Carcassone_Tiles2.png)
 
