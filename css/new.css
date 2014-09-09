@@ -52,6 +52,11 @@ body {
     margin-bottom: 30px; }
     #content footer a {
       text-decoration: none; }
+    #content footer small {
+      display: block;
+      margin-top: 5px;
+      padding-left: 18px;
+      font-size: 75%; }
 
 .gist {
   font-size: 60%; }
@@ -68,6 +73,9 @@ body {
 
 #lego {
   background: #4C5053; }
+
+#toomany {
+  background: #183060; }
 
 .twitter-tweet {
   margin: 0 auto !important; }
