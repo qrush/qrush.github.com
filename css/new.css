@@ -5,6 +5,19 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 25px; }
+  body nav {
+    position: absolute;
+    top: 0px;
+    left: 5px; }
+    body nav a {
+      text-decoration: none;
+      font-size: 80%;
+      opacity: 0.8; }
+      body nav a:hover {
+        text-decoration: underline; }
+  body code {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3px; }
 
 #content {
   width: 600px;
@@ -79,10 +92,6 @@ body {
 
 #dokku {
   background: #8877C9; }
-
-code {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 3px; }
 
 .twitter-tweet {
   margin: 0 auto !important; }
