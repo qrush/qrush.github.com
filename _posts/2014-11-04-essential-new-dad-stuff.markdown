@@ -10,7 +10,7 @@ There's a lot of terrible books out there just for dads. Awful "baby center" web
 
 <img class="center" src="/images/hard.gif" width="100%" />
 
-What there isn't enough of is what specifically to pick up for dads. Here's 3 things I have been recommending to the new dads I've met.
+What there isn't enough of is what specifically to pick up for dads. Here's 3 things I have been recommending to new dads I've met:
 
 ### Happiest Baby on the Block
 
