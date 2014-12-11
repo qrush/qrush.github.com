@@ -207,3 +207,7 @@ ul { list-style-type: square; }
 .post-thoughtbot a {
   color: #8A4860;
 }
+
+.post-pickaxe a {
+  color: rgba(83, 34, 54, 1.0);
+}
