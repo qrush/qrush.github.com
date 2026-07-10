@@ -1,6 +1,5 @@
 ---
 title: Sync and edit files on two iPhones
-layout: new
 tags: sync-iphones
 ---
 

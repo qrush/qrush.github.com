@@ -1,6 +1,5 @@
 ---
 title: 5x5 Lego Carcassone
-layout: new
 tags: lego
 thumbnail: http://quaran.to/images/Carcassone_Tiles2.png
 ---

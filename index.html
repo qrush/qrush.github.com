@@ -1,16 +1,43 @@
 ---
 layout: default
-title: coding with spice
 ---
-<h2>archive</h2>
-<ul id="archive">
-{% for post in site.posts %}
-  <li class="post-{{ post.category }}">
-  {% if post.external_url == nil %}
-    <a href="{{ post.url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr>
-  {% else %}
-    <a href="{{ post.external_url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr>
-  {% endif %}
-  </li>
-{% endfor %}
-</ul>
+<section class="intro">
+  <h1>Nick Quaranto</h1>
+  <p class="tagline">coding with spice ¤ est. 2007 ¤ rebuilt 2026</p>
+  <p>
+    Nick is a short, sturdy creature fond of drink and industry. He works at
+    <a href="https://wistia.com">Wistia</a> and lives in
+    <a href="https://www.youtube.com/watch?v=je1NIf8GeeY">Boston, MA</a>.
+    Say hi: <a href="mailto:nick@quaran.to">nick@quaran.to</a>.
+  </p>
+  <p>
+    Elsewhere: <a href="https://github.com/qrush">GitHub</a> ¤
+    <a href="https://twitter.com/qrush">Twitter</a> ¤
+    <a href="https://instagram.com/qru.sh">Instagram</a> ¤
+    <a href="https://speakerdeck.com/qrush">Speaker Deck</a> ¤
+    <a href="https://quaran.to/resume">resume</a> ¤
+    <a href="https://quaran.to/cookies">cookies</a>
+  </p>
+</section>
+
+<section class="journal">
+  <h2>Journal</h2>
+  <ul class="post-list">
+  {% for post in site.categories.journal %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+
+<section class="older">
+  <h2>Older writing</h2>
+  <p>
+    From 2007 to 2014 this site was called <em>Litany Against Fear</em> — all
+    72 posts from that era live on in <a href="/archive/">the archive</a>.
+    There's also plenty I've <a href="/written/">written elsewhere</a>, like
+    <a href="http://gitready.com">git ready</a>.
+  </p>
+</section>

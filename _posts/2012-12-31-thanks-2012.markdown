@@ -1,5 +1,4 @@
 ---
-layout: new
 title: Thanks, 2012
 category: life
 permalink: /2012
