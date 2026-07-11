@@ -2,6 +2,9 @@
 layout: post
 title: "BigDecimal#round always, please"
 category: journal
+tag: daily
+icon: "🧮"
+cover: /images/journal/bigdecimal-round-always-please/cover.jpg
 original_url: https://quaran.to/bigdecimal-round-always-please
 ---
 

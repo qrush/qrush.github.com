@@ -2,6 +2,9 @@
 layout: post
 title: "Starting this off"
 category: journal
+tag: daily
+icon: "🍦"
+cover: /images/journal/starting-this-off/cover.jpg
 original_url: https://quaran.to/journal/starting-this-off
 ---
 

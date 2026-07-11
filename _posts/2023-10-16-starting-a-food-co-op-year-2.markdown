@@ -2,6 +2,9 @@
 layout: post
 title: "Starting a food co-op: Year 2"
 category: journal
+tag: co-op
+icon: "🪴"
+cover: /images/journal/starting-a-food-co-op-year-2/cover.jpg
 original_url: https://quaran.to/starting-a-food-co-op-year-2
 ---
 

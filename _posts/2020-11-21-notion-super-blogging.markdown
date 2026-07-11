@@ -2,6 +2,9 @@
 layout: post
 title: "Notion + Super Blogging"
 category: journal
+tag: daily
+icon: "⚡"
+cover: /images/journal/notion-super-blogging/cover.jpg
 original_url: https://quaran.to/notion-super-blogging
 ---
 

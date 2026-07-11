@@ -2,6 +2,9 @@
 layout: post
 title: "Data export, or die"
 category: journal
+tag: daily
+icon: "🐍"
+cover: /images/journal/data-export-or-die/cover.jpg
 original_url: https://quaran.to/data-export-or-die
 ---
 

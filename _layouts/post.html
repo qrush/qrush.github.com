@@ -3,10 +3,12 @@ layout: default
 ---
 <article class="post">
   <header class="post-header">
-    <h1>{{ page.title }}</h1>
+    {% if page.cover %}<img class="cover" src="{{ page.cover }}" alt="">{% endif %}
+    <h1>{% if page.icon %}{{ page.icon }} {% endif %}{{ page.title }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-      {%- if page.category %} ¤ {{ page.category }}{% endif -%}
+      {%- assign t = page.tags | first %}
+      {%- if t %} ¤ <span class="pill">{{ t }}</span>{% elsif page.category %} ¤ {{ page.category }}{% endif -%}
     </p>
   </header>
   {{ content }}

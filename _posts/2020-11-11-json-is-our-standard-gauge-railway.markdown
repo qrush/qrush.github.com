@@ -2,6 +2,9 @@
 layout: post
 title: "JSON is our standard gauge railway"
 category: journal
+tag: daily
+icon: "🚟"
+cover: /images/journal/json-is-our-standard-gauge-railway/cover.jpg
 original_url: https://quaran.to/json-is-our-standard-gauge-railway
 ---
 

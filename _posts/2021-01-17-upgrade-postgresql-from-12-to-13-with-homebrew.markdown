@@ -2,6 +2,9 @@
 layout: post
 title: "Upgrade PostgreSQL from 12 to 13 with Homebrew"
 category: journal
+tag: daily
+icon: "🆙"
+cover: /images/journal/upgrade-postgresql-from-12-to-13-with-homebrew/cover.jpg
 original_url: https://quaran.to/upgrade-postgresql-from-12-to-13-with-homebrew
 ---
 

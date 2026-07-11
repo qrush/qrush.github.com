@@ -18,7 +18,7 @@ permalink: /archive/
     {% if post.external_url %}
       <a href="{{ post.external_url }}">{{ post.title }} ↗</a>
     {% else %}
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{% if post.icon %}{{ post.icon }} {% endif %}{{ post.title }}</a>
     {% endif %}
     {% if post.category %}<span class="cat">{{ post.category }}</span>{% endif %}
   </li>
