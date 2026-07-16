@@ -1,16 +1,48 @@
 ---
 layout: default
-title: coding with spice
 ---
-<h2>archive</h2>
-<ul id="archive">
-{% for post in site.posts %}
-  <li class="post-{{ post.category }}">
-  {% if post.external_url == nil %}
-    <a href="{{ post.url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr>
-  {% else %}
-    <a href="{{ post.external_url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr>
-  {% endif %}
-  </li>
-{% endfor %}
-</ul>
+<section class="intro">
+  <img class="banner" src="/images/banner.jpg" alt="Nick Quaranto speaking on stage">
+  <h1>Nick Quaranto</h1>
+  <p class="tagline">coding with spice ¤ est. 2007 ¤ rebuilt 2026</p>
+  <p>
+    Nick is a short, sturdy creature fond of drink and industry. He works at
+    <a href="https://wistia.com">Wistia</a> and lives in
+    <a href="https://www.youtube.com/watch?v=je1NIf8GeeY">Boston, MA</a>.
+    Say hi: <a href="mailto:nick@quaran.to">nick@quaran.to</a>.
+  </p>
+  <p>
+    Social: <a href="https://github.com/qrush">GitHub</a> ¤
+    <a href="https://twitter.com/qrush">Twitter</a> ¤
+    <a href="https://instagram.com/qru.sh">Instagram</a> ¤
+    <a href="https://speakerdeck.com/qrush">Speaker Deck</a>
+  </p>
+</section>
+
+<section class="journal">
+  <h2>🤔 Journal</h2>
+  <ul class="post-list">
+  {% for post in site.categories.journal %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+      <a href="{{ post.url }}">{{ post.icon }} {{ post.title }}</a>
+      {% assign t = post.tags | first %}{% if t %}<span class="pill">{{ t }}</span>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+
+<section class="etc">
+  <h2>Etc</h2>
+  <ul class="etc-list">
+    <li>⏳ <a href="/archive/">Archive</a> <span class="desc">blog posts 2007–2014</span></li>
+    <li>✍️ <a href="/written/">Written</a> <span class="desc">articles elsewhere, like git ready</span></li>
+    <li>🍪 <a href="https://quaran.to/cookies">Cookies</a> <span class="desc">what I've been clicking on</span></li>
+    <li>👋 <a href="https://quaran.to/resume">Resume</a> <span class="desc">ledger of personal capitalism</span></li>
+  </ul>
+</section>
+
+<figure class="postcard">
+  <img src="/images/peaks-island-2020.jpg" alt="Nick and family on Peaks Island, Maine">
+  <figcaption>Peaks Island, Maine — 2020</figcaption>
+</figure>

@@ -1,7 +1,4 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'jekyll'
-gem 'rake'
-gem 'maruku'
-gem 'sass'
-gem 'RedCloth'
+gem "jekyll", "~> 4.3"
+gem "webrick"

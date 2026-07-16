@@ -1,0 +1,27 @@
+---
+layout: default
+title: archive
+permalink: /archive/
+---
+<h1>Archive</h1>
+<p class="tagline">everything since 2007, newest first</p>
+
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% if year != previous_year %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2>{{ year }}</h2>
+    <ul class="post-list">
+  {% endif %}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time>
+    {% if post.external_url %}
+      <a href="{{ post.external_url }}">{{ post.title }} ↗</a>
+    {% else %}
+      <a href="{{ post.url }}">{% if post.icon %}{{ post.icon }} {% endif %}{{ post.title }}</a>
+    {% endif %}
+    {% if post.category %}<span class="cat">{{ post.category }}</span>{% endif %}
+  </li>
+  {% capture previous_year %}{{ year }}{% endcapture %}
+{% endfor %}
+</ul>

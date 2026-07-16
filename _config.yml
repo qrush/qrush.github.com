@@ -1,7 +1,23 @@
-auto: true
+title: nick quaranto ¤ coding with spice
+author: Nick Quaranto
+email: nick@quaran.to
+url: https://qrush.github.io
+
 permalink: /blog/:year/:month/:day/:title
-pygments: true
-server: true
+markdown: kramdown
+highlighter: rouge
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+
 exclude:
-- README.md
-- Rakefile
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - CC-LICENSE
+  - MIT-LICENSE
+  - vendor

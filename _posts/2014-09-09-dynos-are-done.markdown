@@ -1,6 +1,5 @@
 ---
 title: Dynos are done
-layout: new
 tags: dokku
 ---
 

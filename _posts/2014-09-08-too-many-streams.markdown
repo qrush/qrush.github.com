@@ -1,6 +1,5 @@
 ---
 title: Too many streams
-layout: new
 tags: toomany
 ---
 

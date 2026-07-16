@@ -1,5 +1,4 @@
 ---
-layout: new
 title: Use Jekyll, SCSS, and CoffeeScript without plugins
 tags: without-plugins
 ---

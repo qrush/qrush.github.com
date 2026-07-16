@@ -1,6 +1,5 @@
 ---
 title: Essential new dad stuff
-layout: new
 tags: new-parent
 ---
 
