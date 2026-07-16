@@ -1,10 +1,10 @@
 ---
 layout: default
-title: archive
-permalink: /archive/
+title: blog
+permalink: /blog/
 ---
-<h1>Archive</h1>
-<p class="tagline">everything since 2007, newest first</p>
+<h1>Blog</h1>
+<p class="tagline">every post since 2007, newest first</p>
 
 {% for post in site.posts %}
   {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
