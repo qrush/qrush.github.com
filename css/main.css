@@ -221,9 +221,34 @@ th, td {
   font-size: 0.8rem;
 }
 
-@media (max-width: 480px) {
-  .post-list li { flex-wrap: wrap; gap: 0.25rem 1rem; }
-  .post-list .cat { display: none; }
+/* narrow screens: stack the masthead and let list rows flow as text */
+
+@media (max-width: 560px) {
+  .masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .masthead nav {
+    margin-left: 0;
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
+  }
+
+  .post-list li {
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  .post-list time {
+    display: inline;
+    margin-right: 0.35rem;
+  }
+
+  .post-list .cat {
+    margin-left: 0.35rem;
+  }
 }
 
 /* etc list + postcard photo */
