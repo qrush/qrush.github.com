@@ -18,23 +18,22 @@ Check out [my GitHub](https://github.com/qrush) for more, and please bug me via 
 
 ### Wistia (2019-present)
 
-**Director of Platform Engineering (2022-present)**
+**Director, Platform Engineering (2022-present)**
 
-* Directed 3 teams with 13 engineers in the Platform Engineering group:
-  * App Platform (product engineering enablement, testing, CI, security)
-  * Media Platform (handling uploads, encoding, and delivery of videos)
-  * Site Reliability Engineering (leading SLO/performance efforts org-wide, maintaining deployment infrastructure)
-* Developed internal frameworks for communicating work between Product and Platform Engineering:
-  * “Papercuts” - small issues that slow down a developer’s day-to-day work - for example, a flaky test failure, build issues on machines, or issues that crop up on multiple machines
-  * “Anchors” - bigger projects that drag down team velocity over several quarters that can be taken on by Platform to speed up a specific Product team or the entire department - for example: feature flags to allow for continuous shipping of new features; modernizing/deprecating services
-* Managed 20+ vendors for Engineering, including negotiating directly with vendors to obtain better deals at scale and evaluating competitive options
-* Held the line for the entire business’ Cost of Goods Sold by optimizing cloud spend with AWS, including:
-  * Implemented budget and spend monitoring to stop getting surprised by costs
-  * Led the analysis and purchase of Savings Plans to save money on compute costs
-  * Helped to push spend into AWS Marketplace wherever possible across the business for vendors
-* Pushed the entire organization forward with modernization efforts, including:
-  * Made pragmatic calls for vendors that save time for Engineering, especially around security efforts/SOC2 and internal tooling
-  * Explored into the forefront of Generative AI by developing Cursor rules/MDC’s to assist UI prototyping
+#### AI-Native Development
+{: .resume-subhead}
+
+* Organized a cross-functional team around building a software factory.
+* Shipped developer workflows that made agentic tools practical and accessible across the organization.
+* Made the business case for AI-native software development and aligned priorities, practices, and adoption.
+
+#### Platform Leadership & Operations
+{: .resume-subhead}
+
+* Lead three teams and 13 engineers across App Platform, Media Platform, and Site Reliability Engineering.
+* Partner with Product Engineering to identify and remove developer friction, while taking on larger platform investments that improve team velocity.
+* Manage Engineering vendors and cloud costs, including AWS spend monitoring, Savings Plans, and Marketplace purchasing.
+* Drive pragmatic modernization across internal tooling, security, and engineering practices.
 
 **Engineering Manager (2020-2022)**
 
@@ -109,8 +108,6 @@ I focused mostly on web technology - ASP, ASP.NET, JavaScript, C#, and discovere
 
 ## Writing
 
-Googling a git question? You may have run across my [git ready](http://gitready.com/) knowledge base. If so - thanks for reading!
-
 Here's some of my favorite samples:
 
 * [Open Source Guilt & Passion](https://medium.com/@qrush/open-source-guilt-passion-96e66560d8c1#.tapjlrz0w)
@@ -161,3 +158,60 @@ Rochester Institute of Technology, 2005-2010
 B.S. in Software Engineering, B.S. in Computer Science
 
 ## 🙇🏻
+
+<article class="resume-print">
+  <header class="resume-print-header">
+    <h1>Nick Quaranto</h1>
+    <p>Director, Platform Engineering · Boston, MA</p>
+    <p><a href="mailto:nick@quaran.to">nick@quaran.to</a> · <a href="https://github.com/qrush">github.com/qrush</a> · <a href="https://quaran.to/resume/">quaran.to/resume</a></p>
+  </header>
+
+  <section>
+    <h2>Experience</h2>
+
+    <h3>Wistia <span>2019–present</span></h3>
+    <p><strong>Director, Platform Engineering</strong> <span>2022–present</span></p>
+    <h4 class="resume-subhead">AI-Native Development</h4>
+    <ul>
+      <li>Organized a cross-functional team around building a software factory.</li>
+      <li>Shipped developer workflows that made agentic tools practical and accessible across the organization.</li>
+      <li>Made the business case for AI-native software development and aligned priorities, practices, and adoption.</li>
+    </ul>
+    <h4 class="resume-subhead">Platform Leadership &amp; Operations</h4>
+    <ul>
+      <li>Lead three teams and 13 engineers across application platform, media platform, and site reliability engineering.</li>
+      <li>Partner with product teams to remove developer friction and deliver platform investments that improve engineering velocity.</li>
+      <li>Manage engineering vendors and AWS costs through spend monitoring, Savings Plans, and Marketplace purchasing.</li>
+      <li>Drive pragmatic modernization across internal tooling, security, and engineering practices.</li>
+    </ul>
+    <p><strong>Engineering Manager</strong> <span>2020–2022</span> · Managed five engineers on App Platform; introduced ADRs and led adoption of GitHub Actions, Backstage, and Storybook.</p>
+    <p><strong>Staff Software Engineer</strong> <span>2019–2020</span> · Re-architected billing from Braintree to Stripe; delivered Rails upgrades, performance work, and GraphQL features.</p>
+
+    <h3>Chatterbug <span>2017–2019</span></h3>
+    <p><strong>Engineering Lead</strong> · Helped launch a WebRTC language-learning service; mentored engineers, planned iterations, improved remote communication, and maintained production infrastructure.</p>
+
+    <h3>Agrilyst <span>2016–2017</span></h3>
+    <p><strong>Senior Engineer</strong> · Built a Rails and React data platform for indoor farms; integrated sensor hardware and worked directly with customers.</p>
+
+    <h3>Basecamp <span>2011–2016</span></h3>
+    <p><strong>Programmer</strong> · Launched and maintained Basecamp 2 and 3; built the company’s first in-house iPhone app and helped establish its native-app team.</p>
+
+    <h3>thoughtbot <span>2009–2011</span></h3>
+    <p><strong>Web Developer</strong> · Shipped client applications, contributed to open source, and mentored apprentices.</p>
+  </section>
+
+  <section>
+    <h2>Open Source &amp; Community</h2>
+    <p>Started <strong>RubyGems.org</strong> (as Gemcutter); maintained <strong>Jekyll</strong>; contributed to Ruby on Rails and thoughtbot libraries. Cofounded <strong>CoworkBuffalo</strong>, created <strong>OpenHack</strong>, organized <strong>NickelCityRuby</strong>, and built <strong>Mx. Desk</strong>.</p>
+  </section>
+
+  <section>
+    <h2>Selected Talks</h2>
+    <p>Speaker at RailsConf, RubyConf, RubyNation, CodeMash, and more. Ruby Hero Award, 2010.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>Rochester Institute of Technology</strong> · B.S., Software Engineering; B.S., Computer Science · 2010</p>
+  </section>
+</article>

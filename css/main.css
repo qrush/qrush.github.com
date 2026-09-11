@@ -323,6 +323,85 @@ th, td {
   color: var(--muted);
 }
 
+/* resume */
+
+.resume-print { display: none; }
+
+.resume-subhead {
+  color: var(--spice);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin: 1.25rem 0 0.6rem;
+  text-transform: uppercase;
+}
+
+@media print {
+  @page { margin: 0.45in; }
+
+  :root { color-scheme: light; }
+
+  body {
+    max-width: none;
+    padding: 0;
+    background: #fff;
+    color: #26221b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 9.5pt;
+    line-height: 1.36;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .masthead, .site-footer, main > :not(.resume-print) { display: none; }
+  .resume-print { display: block; }
+
+  .resume-print a { color: #a63c26; text-decoration: none; }
+  .resume-print h1, .resume-print h2, .resume-print h3, .resume-print h4,
+  .resume-print p, .resume-print ul { margin-top: 0; }
+
+  .resume-print-header { border-bottom: 1.5pt solid #e3dccb; margin-bottom: 0.85em; }
+  .resume-print-header h1 { font-size: 21pt; letter-spacing: -0.02em; margin-bottom: 0.08em; }
+  .resume-print-header p { color: #776f60; margin-bottom: 0.2em; }
+  .resume-print-header p:last-child {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 8.6pt;
+    margin-bottom: 0.5em;
+  }
+
+  .resume-print section { break-inside: avoid; margin-bottom: 1.4em; }
+  .resume-print h2 {
+    border-bottom: 0.75pt solid #e3dccb;
+    color: #a63c26;
+    font-size: 10.2pt;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .resume-print h3 { font-size: 10.2pt; margin-bottom: 0.22em; }
+  .resume-print h3:not(:first-of-type) { margin-top: 1.1em; }
+  .resume-print .resume-subhead {
+    background: #f1ecdf;
+    border: 0.75pt solid #e3dccb;
+    color: #a63c26;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 7.9pt;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin: 0.15em 0 0.45em;
+    padding: 0.2em 0.55em;
+    text-transform: uppercase;
+  }
+  .resume-print h3 span, .resume-print p > span { color: #776f60; float: right; font-weight: normal; }
+  .resume-print p { margin-bottom: 0.5em; }
+  .resume-print ul { margin-bottom: 0.55em; padding-left: 1.15em; }
+  .resume-print li { margin-bottom: 0.24em; }
+}
+
 /* syntax highlighting (rouge), tuned to both themes */
 
 .highlight .c, .highlight .c1, .highlight .cm { color: var(--muted); font-style: italic; }
